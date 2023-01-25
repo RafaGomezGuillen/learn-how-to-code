@@ -1,5 +1,4 @@
-.App {
-  font-family: sans-serif;
+.searcher {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -7,9 +6,14 @@
 }
 
 .search-container {
-  width: 280px;
+  width: 950px;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 75px;
+  right: 0%;
+  padding: 15px;
+  background-color: #059862;
 }
 
 .dropdown {
@@ -30,9 +34,52 @@
 }
 
 input {
-  width: 220px;
+  width: 830px;
 }
 
 .search-inner {
   display: flex;
+}
+
+.show-searcher-btn {
+  background: inherit;
+  border: none;
+  position: absolute;
+  left: 90%;
+  top: 2%;
+}
+
+.show-searcher-img {
+  width: 35px;
+  height: 35px;
+  color: var(--font-color);
+}
+
+.show-searcher-img:hover {
+  color: rgba(5, 152, 98, 0.8);
+}
+
+.searcher-btn {
+  margin-left: 10px;
+  width: 80px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .show-searcher-btn {
+    position: absolute;
+    left: 84%;
+    top: 2.2%;
+  }
+
+  .show-searcher-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .search-container {
+    width: 500px;
+    top: 75px;
+    right: 0%;
+    padding: 15px;
+  }
 }

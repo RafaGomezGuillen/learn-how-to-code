@@ -6,3 +6,14 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+#darkMode:hover {
+  background-color: rgba(5, 152, 98, 0.8);
+}
+
+@media only screen and (max-width: 1000px) {
+  #darkMode {
+    width: 30px;
+    height: 30px;
+  }
+}

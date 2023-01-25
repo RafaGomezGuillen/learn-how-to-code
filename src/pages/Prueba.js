@@ -1,7 +1,11 @@
 import React from "react";
 
 function Prueba() {
-  return <h1>Holaa</h1>;
+  return (
+    <div>
+      <h1>Holaaa</h1>
+    </div>
+  )
 }
 
 export default Prueba;

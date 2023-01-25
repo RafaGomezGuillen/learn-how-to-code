@@ -1,15 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./components/header/Header";
-import reportWebVitals from "./reportWebVitals";
-import MyRoutes from "./components/routes/Routes";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <>
-    <Header></Header>
-    <MyRoutes></MyRoutes>
-  </>
+  <BrowserRouter>
+    <App></App>
+  </BrowserRouter>
 );
-
-reportWebVitals();

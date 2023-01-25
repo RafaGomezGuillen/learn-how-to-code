@@ -17,6 +17,7 @@ body.dark {
 .header {
   background-color: var(--background-color-header);
   height: 75px;
+  margin: 0 auto;
 }
 
 .icon-home {
@@ -34,13 +35,6 @@ body.dark {
 
 .icon-home-img:hover {
   color: rgba(5, 152, 98, 0.8);
-}
-
-.tutorial {
-  width: 117px;
-  border: solid red;
-  float: left;
-  height: 75px;
 }
 
 #nav-btn {
@@ -74,4 +68,17 @@ body.dark {
 .dark-mode {
   position: absolute;
   left: 95%;
+  top: 2%;
+}
+
+.d-inline {
+  border: solid red;
+}
+
+@media only screen and (max-width: 1000px) { 
+  .dark-mode {
+    position: absolute;
+    left: 92%;
+    top: 2.3%;
+  }
 }
