@@ -1,0 +1,77 @@
+:root {
+  --light: white;
+  --black: black;
+  --dark: #1D2A35;
+}
+
+body.light {
+  --background-color-header: var(--light);
+  --font-color: var(--black);
+}
+
+body.dark {
+  --background-color-header: var(--dark);
+  --font-color: var(--light);
+}
+
+.header {
+  background-color: var(--background-color-header);
+  height: 75px;
+}
+
+.icon-home {
+  width: 77px;
+  height: 70px;
+  margin-left: 1.5%;
+  float: left;
+}
+
+.icon-home-img {
+  width: 75px;
+  height: 75px;
+  color: #059862;
+}
+
+.icon-home-img:hover {
+  color: rgba(5, 152, 98, 0.8);
+}
+
+.tutorial {
+  width: 117px;
+  border: solid red;
+  float: left;
+  height: 75px;
+}
+
+#nav-btn {
+  width: 117px;
+  height: 75px;
+  background-color: var(--background-color-header);
+  border: none;
+  float: left;
+  color: var(--font-color);
+  font-size: 18px;
+}
+
+#nav-btn:hover,
+.about-us:hover {
+  background-color: #059862;
+  color: white;
+}
+
+.about-us {
+  text-decoration: none;
+  color: var(--font-color);
+  width: 117px;
+  height: 75px;
+  float: left;
+  text-align: center;
+  padding: 23.4px;
+  border-radius: 10px;
+  background-color: var(--background-color-header);
+}
+
+.dark-mode {
+  position: absolute;
+  left: 95%;
+}
