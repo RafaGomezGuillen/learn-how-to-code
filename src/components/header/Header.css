@@ -1,17 +1,33 @@
+colores {
+  color: #090809;
+  color: #2176AE;
+  color: #FEA82F;
+  color: #D81159;
+  color: #9ABD97;
+  color: #161925;
+}
+
 :root {
-  --light: white;
+  --white: white;
   --black: black;
-  --dark: #1D2A35;
+  --dark: #090809;
+  --light: #E7E9EB;
+  --dark-code-inside: #15202B;
+  --dark-code-container: #38444D;
 }
 
 body.light {
-  --background-color-header: var(--light);
+  --background-color-header: var(--white);
+  --background-code-inside: var(--white);
+  --background-code-container: var(--light);
   --font-color: var(--black);
 }
 
 body.dark {
   --background-color-header: var(--dark);
-  --font-color: var(--light);
+  --background-code-container: var(--dark-code-container);
+  --background-code-inside: var(--dark-code-inside);
+  --font-color: var(--white);
 }
 
 .header {
@@ -30,11 +46,11 @@ body.dark {
 .icon-home-img {
   width: 75px;
   height: 75px;
-  color: #059862;
+  color: #2176AE;
 }
 
 .icon-home-img:hover {
-  color: rgba(5, 152, 98, 0.8);
+  color: rgba(33, 118, 174, 0.8);
 }
 
 #nav-btn {
@@ -49,7 +65,7 @@ body.dark {
 
 #nav-btn:hover,
 .about-us:hover {
-  background-color: #059862;
+  background-color: #2176AE;
   color: white;
 }
 

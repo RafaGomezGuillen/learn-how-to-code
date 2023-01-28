@@ -1,0 +1,18 @@
+footer {
+  height: 100px;
+  background-color: var(--background-color-header);
+  color: var(--font-color)
+}
+
+.footer-h5 {
+  padding-top: 5px;
+  padding-left: 5px;
+  width: 400px;
+}
+
+.icon-links {
+  height: 35px;
+  width: 35px;
+  margin: 7px;
+  color: var(--font-color)
+}

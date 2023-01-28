@@ -1,0 +1,40 @@
+.code-container {
+  width: 600px;
+  height: 330px;
+  background-color: var(--background-code-container);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.code-container-h3 {
+  color: var(--font-color);
+  height: 80px;
+  padding: 30px;
+  text-align: left;
+}
+
+.copy-btn {
+  width: 35px;
+  height: 35px;
+  background: inherit;
+  border: none;
+  border-radius: 100%;
+}
+
+.copy-btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.copy-img {
+  color: var(--font-color);
+}
+
+.code-inside {
+  width: 545px;
+  height: 215px;
+  margin-right: 15px;
+  float: right;
+  background-color: var(--background-code-inside);
+  text-align: left;
+  color: var(--font-color);
+}

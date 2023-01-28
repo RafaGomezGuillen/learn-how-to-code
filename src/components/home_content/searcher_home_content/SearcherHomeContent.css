@@ -1,0 +1,29 @@
+.search-container-home {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: #FEA82F;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .show-searcher-btn {
+    position: absolute;
+    left: 84%;
+    top: 2.2%;
+  }
+
+  .show-searcher-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .search-container {
+    width: 500px;
+    top: 75px;
+    right: 0%;
+    padding: 15px;
+  }
+}
