@@ -1,39 +1,11 @@
-colores {
-  color: #090809;
-  color: #2176AE;
-  color: #FEA82F;
-  color: #D81159;
-  color: #9ABD97;
-  color: #161925;
-}
-
-:root {
-  --white: white;
-  --black: black;
-  --dark: #090809;
-  --light: #E7E9EB;
-  --dark-code-inside: #15202B;
-  --dark-code-container: #38444D;
-}
-
-body.light {
-  --background-color-header: var(--white);
-  --background-code-inside: var(--white);
-  --background-code-container: var(--light);
-  --font-color: var(--black);
-}
-
-body.dark {
-  --background-color-header: var(--dark);
-  --background-code-container: var(--dark-code-container);
-  --background-code-inside: var(--dark-code-inside);
-  --font-color: var(--white);
-}
-
 .header {
   background-color: var(--background-color-header);
   height: 75px;
   margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  border-bottom-color: black;
 }
 
 .icon-home {
@@ -84,7 +56,7 @@ body.dark {
 .dark-mode {
   position: absolute;
   left: 95%;
-  top: 2%;
+  top: 25%;
 }
 
 .d-inline {
@@ -95,6 +67,17 @@ body.dark {
   .dark-mode {
     position: absolute;
     left: 92%;
-    top: 2.3%;
+  }
+
+  #nav-btn {
+    width: 100px;
+    font-size: 15px;
+  }
+
+  .about-us {
+    width: 100px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
   }
 }

@@ -22,7 +22,7 @@ function HomeContent() {
           <a
             id="code-link-color"
             className="code-link"
-            href="../../pages/Prueba"
+            href="../../pages/html_tutorials/HtmlHome"
           >
             HTML tutorials
           </a>

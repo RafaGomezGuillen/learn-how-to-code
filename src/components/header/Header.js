@@ -34,10 +34,10 @@ function Header() {
               <Dropdown.Item>Menu Item</Dropdown.Item>
               <Dropdown.Item>Menu Item</Dropdown.Item>
             </Dropdown.Menu>
-            <a className="about-us" href="../../pages/Prueba">
+          </Dropdown>
+          <a className="about-us" href="../../pages/Prueba">
               About me
             </a>
-          </Dropdown>
           <div className="dark-mode">
             <DarkMode />
           </div>

@@ -1,0 +1,49 @@
+.html-tutorial-navbar,
+.html-tutorial-navbar-2 {
+  position: relative;
+  top: 75px;
+  width: 215px;
+  overflow-y: scroll;
+  background-color: var(--background-color-header);
+  color: var(--font-color);
+}
+
+.html-tutorial-navbar h1,
+.html-tutorial-navbar-2 h1 {
+  padding-top: 20px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.html-tutorial-navbar a,
+.html-tutorial-navbar-2 a {
+  text-decoration: none;
+  padding: 2px 1px 1px 16px;
+  display: block;
+  width: 100%;
+  color: var(--font-color);
+}
+
+.html-tutorial-navbar-btn {
+  position: relative;
+  top: 75px;
+  height: 100%;
+}
+
+.html-tutorial-navbar-2 {
+  position: relative;
+  top: -45px;
+  z-index: -1;
+  height: 100%;
+}
+
+.html-tutorial-navbar-btn button {
+  border: none;
+  padding: 5px;
+  background-color: var(--background-color-header);
+  z-index: 1;
+}
+
+.html-tutorial-navbar-btn button:hover {
+  background-color: rgba(33, 118, 174, 0.8);
+}
