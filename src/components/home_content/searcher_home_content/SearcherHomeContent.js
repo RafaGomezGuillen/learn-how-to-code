@@ -27,7 +27,7 @@ function SearcherHomeContent() {
   };
 
   return (
-    <div className="searcher">
+    <div className="searcher-2">
       <div className="search-container-home">
         <div className="search-inner">
           <input type="text" value={value} onChange={onChange}/>

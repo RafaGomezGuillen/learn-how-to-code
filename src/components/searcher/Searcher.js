@@ -29,7 +29,7 @@ function Searcher() {
   };
 
   return (
-    <div>
+    <div className="div-searcher">
       <button
         onClick={() => setShowDiv(!showDiv)}
         className="show-searcher-btn"
