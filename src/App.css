@@ -35,6 +35,11 @@ body.dark {
   --background-color: var(--dark-background-color);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--background-color);
+  margin: 0;
 }

@@ -56,7 +56,7 @@ input {
   height: 35px;
   position: absolute;
   left: 90%;
-  top: 25%;
+  top: 2%;
 }
 
 .show-searcher-img {
@@ -82,7 +82,6 @@ input {
     height: 35px;
     position: absolute;
     left: 76%;
-    top: 24%;
   }
 
   .searcher {

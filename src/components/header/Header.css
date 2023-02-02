@@ -1,11 +1,7 @@
 .header {
   background-color: var(--background-color-header);
-  height: 75px;
-  margin: 0 auto;
-  position: fixed;
-  width: 100%;
+  display: flex;
   z-index: 1;
-  border-bottom-color: black;
 }
 
 .icon-home {
@@ -56,7 +52,7 @@
 .dark-mode {
   position: absolute;
   left: 95%;
-  top: 25%;
+  top: 2%;
 }
 
 .d-inline {

@@ -8,7 +8,7 @@ function Home() {
     <>
       <Header />
       <HomeContent />
-      <Footer />
+      <Footer isAbsolute="none" isFixed="none"/>
     </>
   );
 }

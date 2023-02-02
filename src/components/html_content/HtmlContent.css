@@ -1,0 +1,6 @@
+/* Main column */
+.main {
+  flex: 85%;
+  padding: 20px;
+  color: var(--font-color);
+}
