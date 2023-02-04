@@ -1,19 +1,5 @@
 #darkMode {
-  border-radius: 100%;
-  width: 35px;
-  height: 35px;
-  background-image: url("../../assets/dark-mode.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-#darkMode:hover {
-  background-color: rgba(33, 118, 174, 0.8);
-}
-
-@media only screen and (max-width: 1000px) {
-  #darkMode {
-    width: 30px;
-    height: 30px;
-  }
+  background-color: var(--background-color-header);
+  border: none;
+  width: 100%;
 }

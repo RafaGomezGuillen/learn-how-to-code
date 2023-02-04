@@ -1,6 +1,6 @@
 footer {
-  background-color: var(--background-color-header);
   color: var(--font-color);
+  float: right;
 }
 
 .footer-h5 {

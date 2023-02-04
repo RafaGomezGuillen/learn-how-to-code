@@ -1,22 +1,17 @@
 .searcher {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 950px;
+  width: 1px;
   height: 65px;
-  position: absolute;
-  top: 60px;
-  right: -190%;
+  color: black;
 }
 
 .search-container {
-  width: 950px;
-  height: 65px;
-  display: flex;
-  flex-direction: column;
-  background-color: #2176ae;
-  padding: 15px;
+  width: 410px;
+  background-color: var(--background-color-header);
+  position: relative;
+  left: 64px;
+  bottom: 55px;
+  padding: 5px;
 }
 
 .dropdown {
@@ -37,7 +32,7 @@
 }
 
 input {
-  width: 830px;
+  width: 400px;
 }
 
 .search-inner {
@@ -54,41 +49,17 @@ input {
 .div-searcher {
   width: 35px;
   height: 35px;
-  position: absolute;
-  left: 90%;
-  top: 2%;
 }
 
 .show-searcher-img {
   position: relative;
-  right: 5px;
+  left: 10px;
   width: 35px;
   height: 35px;
   color: var(--font-color);
 }
 
-.show-searcher-img:hover {
-  color: rgba(33, 118, 174, 0.8);
-}
-
 .searcher-btn {
   margin-left: 10px;
   width: 80px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .div-searcher {
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    left: 76%;
-  }
-
-  .searcher {
-    width: 290px;
-    height: 65px;
-    margin: 0 auto;
-    position: absolute;
-    right: 20px;
-  }
 }

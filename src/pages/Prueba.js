@@ -1,9 +1,10 @@
 import React from "react";
+import HtmlTutorialNavbar from "../components/navbar/html_tutorial_navbar/HtmlTutorialNavbar";
 
 function Prueba() {
   return (
     <div>
-      <h1>Hoalaa</h1>
+      <HtmlTutorialNavbar></HtmlTutorialNavbar>
     </div>
   )
 }
