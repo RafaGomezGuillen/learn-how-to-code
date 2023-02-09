@@ -17,3 +17,25 @@
   background-color: #FEA82F;
   padding: 15px;
 }
+
+@media only screen and (max-width: 1358px) {
+  .searcher-2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70px;
+    margin: 0 auto;
+    width: 300px;
+  }
+  
+  .search-container-home {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #FEA82F;
+    padding: 15px;
+  }
+}

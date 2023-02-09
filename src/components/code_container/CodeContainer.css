@@ -38,3 +38,17 @@
   text-align: left;
   color: var(--font-color);
 }
+
+@media only screen and (max-width: 500px) {
+  .code-container {
+    width: 100%;
+    height: 330px;
+    margin: 65px;
+    border-radius: 0;
+  }
+
+  .code-inside {
+    width: 85%;
+    height: 215px;
+  }
+}

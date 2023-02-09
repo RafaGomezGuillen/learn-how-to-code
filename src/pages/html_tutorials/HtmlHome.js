@@ -1,13 +1,14 @@
 import React from "react";
 import Footer from "../../components/footer/Footer";
 import HtmlTutorialNavbar from "../../components/navbar/html_tutorial_navbar/HtmlTutorialNavbar";
-import "./HtmlHome.css";
+import HtmlTutorialHomeContent from "../../components/html_tutorial/home/HtmlContent";
 
 function HtmlHome() {
   return (
     <>
       <HtmlTutorialNavbar />
-      <Footer isAbsolute="absolute" isFixed="fixed" />
+      <HtmlTutorialHomeContent />
+      <Footer />
     </>
   );
 }

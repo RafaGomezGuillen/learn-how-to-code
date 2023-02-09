@@ -11,6 +11,7 @@ colores {
   --dark-background-color: #1D2A35;
   --white: white;
   --black: black;
+  --orange: #FEA82F;
 
   --light: #E7E9EB;
   --dark: #15202B;
@@ -24,6 +25,7 @@ body.light {
   --background-code-inside: var(--white);
   --background-code-container: var(--light);
   --font-color: var(--black);
+  --font-color-nav: var(--dark);
   --background-color: var(--white)
 }
 
@@ -32,14 +34,20 @@ body.dark {
   --background-code-container: var(--dark-code-container);
   --background-code-inside: var(--dark-code-inside);
   --font-color: var(--white);
+  --font-color-nav: var(--orange);
   --background-color: var(--dark-background-color);
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
   background-color: var(--background-color);
   margin: 0;
+}
+
+.sidenav---sidenav-subnav---1EN61 {
+  background: var(--background-color);
+  border: 1px var(--background-color) solid;
+}
+
+.sidenav---sidenav-subnavitem---1cD47 {
+  color: var(--font-color);
 }

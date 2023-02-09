@@ -14,7 +14,7 @@ function Filter(value) {
 }
 
 function SearcherHomeContent() {
-  const [value, setValue] = useState("Search our tutorial and exercises...");
+  const [value, setValue] = useState("Search something...");
   let docName = Filter(value);
 
   const onChange = (event) => {

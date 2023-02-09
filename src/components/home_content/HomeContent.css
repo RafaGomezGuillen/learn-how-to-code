@@ -1,15 +1,8 @@
-colores {
-  color: #090809;
-  color: #2176ae;
-  color: #fea82f;
-  color: #d81159;
-  color: #9abd97;
-}
-
 .presentation {
   height: 450px;
   background-color: #161925;
   text-align: center;
+  margin-left: 64px;
 }
 
 .presentation-h1 {
@@ -30,6 +23,7 @@ colores {
 .presentation-code {
   height: 450px;
   text-align: center;
+  margin-left: 64px;
 }
 
 .presentation-inside {
@@ -95,9 +89,12 @@ colores {
     visibility: hidden;
   }
 
+  .presentation, .presentation-code {
+    width: 100%;
+  }
+
   .presentation-inside {
     margin: 0 auto;
     width: 100%;
-    margin-top: 2%;
   }
 }
