@@ -11,8 +11,16 @@ import { BsPaypal } from "react-icons/bs";
 function Footer() {
   return (
     <>
-      <footer>
-        <h5 className="footer-h5">Web page made by Rafael Gómez Guillén.</h5>
+      <div className="footer">
+        <p>
+          This page was created for learning the course of the Development of
+          web applications. All examples of code was made by me, and it could be
+          improved and possibly wrong. Tutorials and exercises are reviewed to
+          avoid errors, but I can not guarantee full correctness of all content.
+        </p>
+        <p>
+          2023-2023
+        </p>
         <a href="https://github.com/RafaGomezGuillen">
           <AiFillGithub className="icon-links" />
         </a>
@@ -28,7 +36,7 @@ function Footer() {
         <a href="https://www.paypal.com/paypalme/rafagomezguillen?country.x=ES&locale.x=es_ES">
           <BsPaypal className="icon-links" />
         </a>
-      </footer>
+      </div>
     </>
   );
 }

@@ -1,28 +1,74 @@
 import React from "react";
 import "./HtmlContent.css";
+import CodeContainer from "../../code_container/CodeContainer";
 
 function HtmlTutorialHomeContent() {
   return (
     <div className="main">
-      <h2>HTML HOME</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <p>Some text..</p>
-      <p>
-        Sunt in culpa qui officia deserunt mollit anim id est laborum
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco.
-      </p>
-      <br />
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <p>Some text..</p>
-      <p>
-        Sunt in culpa qui officia deserunt mollit anim id est laborum
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco.
-      </p>
+      <h1>HTML HOME</h1>
+      <div className="introduction">
+        <p>
+          Irure occaecat nisi dolor amet quis deserunt eiusmod deserunt pariatur
+          est quis qui nulla. Tempor in cupidatat do minim ipsum aliquip laborum
+          cupidatat reprehenderit. Velit reprehenderit labore deserunt aliqua
+          dolor aliqua amet laboris nulla pariatur. Aute pariatur reprehenderit
+          ut nostrud nostrud commodo ullamco cillum sunt ex. Proident in non
+          incididunt officia aliquip. Esse consectetur magna Lorem cillum. Nisi
+          aliquip enim qui et veniam velit irure culpa fugiat esse adipisicing
+          consequat culpa.
+        </p>
+        <p>
+          Irure occaecat nisi dolor amet quis deserunt eiusmod deserunt pariatur
+          est quis qui nulla. Tempor in cupidatat do minim ipsum aliquip laborum
+          cupidatat reprehenderit. Velit reprehenderit labore deserunt aliqua
+          dolor aliqua amet laboris nulla pariatur. Aute pariatur reprehenderit
+          ut nostrud nostrud commodo ullamco cillum sunt ex. Proident in non
+          incididunt officia aliquip. Esse consectetur magna Lorem cillum. Nisi
+          aliquip enim qui et veniam velit irure culpa fugiat esse adipisicing
+          consequat culpa.
+        </p>
+        <p>
+          Irure occaecat nisi dolor amet quis deserunt eiusmod deserunt pariatur
+          est quis qui nulla. Tempor in cupidatat do minim ipsum aliquip laborum
+          cupidatat reprehenderit. Velit reprehenderit labore deserunt aliqua
+          dolor aliqua amet laboris nulla pariatur. Aute pariatur reprehenderit
+          ut nostrud nostrud commodo ullamco cillum sunt ex. Proident in non
+          incididunt officia aliquip. Esse consectetur magna Lorem cillum. Nisi
+          aliquip enim qui et veniam velit irure culpa fugiat esse adipisicing
+          consequat culpa.
+        </p>
+      </div>
+      <hr></hr>
+      <div className="content-code">
+        <h2>
+          Irure dolore quis mollit ea magna veniam voluptate qui elit aute amet
+          officia eu.
+        </h2>
+        <p>
+          Pariatur excepteur velit ullamco mollit eiusmod ad tempor labore ipsum
+          ut.
+        </p>
+        <CodeContainer
+          title={"HTML"}
+          code={
+            "<!DOCTYPE html>\n<html>\n<title>HTML Tutorial</title>\n<body>\n\n<h1>Hello world!</h1>\n\n</body>\n</html><!DOCTYPE html>\n<html>\n<title>HTML Tutorial</title>\n<body>\n\n<h1>Hello world!</h1>\n\n</body>\n</html>"
+          }
+          containerHeight={"500px"}
+          insideHeight={"75%"}
+        />
+      </div>
+      <hr></hr>
+      <div className="content-code">
+        <h2>
+          Irure dolore quis mollit ea magna veniam voluptate qui elit aute amet
+          officia eu.
+        </h2>
+        <p>
+          Pariatur excepteur velit ullamco mollit eiusmod ad tempor labore ipsum
+          ut.
+        </p>
+      </div>
+      <hr></hr>
     </div>
   );
 }

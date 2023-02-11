@@ -1,6 +1,20 @@
 .main {
   margin-left: 64px;
   background-color: var(--background-color);
-  height: 100vh;
   color: var(--font-color);
+  padding-bottom: 90px;
+}
+
+.main h1 {
+  padding: 25px;
+}
+
+.introduction {
+  background-color: var(--background-color-header);
+  padding: 25px;
+}
+
+.content-code h2,
+.content-code p {
+  padding: 25px;
 }

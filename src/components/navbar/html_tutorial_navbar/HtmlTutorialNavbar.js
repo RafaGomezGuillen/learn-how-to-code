@@ -38,7 +38,7 @@ function HtmlTutorialNavbar() {
           backgroundColor: "#15202B",
         }}
       />
-      <SideNav.Nav defaultSelected="home">
+      <SideNav.Nav>
         <NavItem eventKey="home">
           <NavIcon>
             <FaHome style={iconStyle} />
@@ -196,14 +196,14 @@ function HtmlTutorialNavbar() {
           <NavItem eventKey="html-images/img">
             <NavText>
               <NavLink to="#" style={linkText}>
-              HTML &lt;img&gt;
+                HTML &lt;img&gt;
               </NavLink>
             </NavText>
           </NavItem>
           <NavItem eventKey="html-images/map">
             <NavText>
               <NavLink to="#" style={linkText}>
-              HTML &lt;map&gt;
+                HTML &lt;map&gt;
               </NavLink>
             </NavText>
           </NavItem>
@@ -216,14 +216,14 @@ function HtmlTutorialNavbar() {
           <NavItem eventKey="html-forms/elements">
             <NavText>
               <NavLink to="#" style={linkText}>
-              HTML Elements Forms
+                HTML Elements Forms
               </NavLink>
             </NavText>
           </NavItem>
           <NavItem eventKey="html-forms/forms">
             <NavText>
               <NavLink to="#" style={linkText}>
-              HTML Advanzed Forms
+                HTML Advanzed Forms
               </NavLink>
             </NavText>
           </NavItem>

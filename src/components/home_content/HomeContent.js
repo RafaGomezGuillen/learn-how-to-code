@@ -37,10 +37,12 @@ function HomeContent() {
         </div>
         <div className="code-div">
           <CodeContainer
-            title={"HTML"}
+            title={"HTML Example"}
             code={
               "<!DOCTYPE html>\n<html>\n<title>HTML Tutorial</title>\n<body>\n\n<h1>Hello world!</h1>\n\n</body>\n</html>"
             }
+            containerHeight={"335px"}
+            insideHeight={"65%"}
           />
         </div>
       </div>
@@ -67,10 +69,12 @@ function HomeContent() {
         </div>
         <div className="code-div">
           <CodeContainer
-            title={"CSS"}
+            title={"CSS Example"}
             code={
               "body {\n background-color: black;\n}\n\nh1 {\n color: white;\n}"
             }
+            containerHeight={"335px"}
+            insideHeight={"65%"}
           />
         </div>
       </div>
@@ -99,10 +103,12 @@ function HomeContent() {
         </div>
         <div className="code-div">
           <CodeContainer
-            title={"C#"}
+            title={"C# Example"}
             code={
               'using System;\n\nnamespace HelloWorld {\n  class Program {\n    static void Main(string[] args) {\n      Console.WriteLine("Hello World!");\n  }\n }\n}   '
             }
+            containerHeight={"335px"}
+            insideHeight={"65%"}
           />
         </div>
       </div>
@@ -128,11 +134,16 @@ function HomeContent() {
           </a>
         </div>
         <div className="code-div">
-          <CodeContainer title={"SQL"} code={"SELECT * FROM GAMES\nWHERE Name='Minecraft';"}/>
+          <CodeContainer
+            title={"SQL Example"}
+            code={"SELECT * FROM GAMES\nWHERE Name='Minecraft';"}
+            containerHeight={"335px"}
+            insideHeight={"65%"}
+          />
         </div>
       </div>
     </>
   );
 }
 
-export default HomeContent;
+export default HomeContent;   

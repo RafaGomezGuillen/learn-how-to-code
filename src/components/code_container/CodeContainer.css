@@ -1,6 +1,4 @@
 .code-container {
-  width: 600px;
-  height: 330px;
   background-color: var(--background-code-container);
   border-radius: 10px;
   margin: 0 auto;
@@ -30,8 +28,7 @@
 }
 
 .code-inside {
-  width: 545px;
-  height: 215px;
+  width: 90%;
   margin-right: 15px;
   float: right;
   background-color: var(--background-code-inside);
@@ -39,16 +36,14 @@
   color: var(--font-color);
 }
 
-@media only screen and (max-width: 500px) {
-  .code-container {
-    width: 100%;
-    height: 330px;
-    margin: 65px;
-    border-radius: 0;
-  }
-
+@media only screen and (max-width: 630px) {
   .code-inside {
     width: 85%;
-    height: 215px;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .code-inside {
+    width: 80%;
   }
 }

@@ -84,7 +84,7 @@
   margin-top: 3%;
 }
 
-@media only screen and (max-width: 1358px) {
+@media only screen and (max-width: 1600px) {
   .code-div {
     visibility: hidden;
   }

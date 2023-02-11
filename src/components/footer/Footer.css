@@ -1,20 +1,22 @@
-footer {
+.footer {
   background-color: var(--background-color-header);
   color: var(--font-color);
-  width: 100%;
-  float: right;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+  padding: 15px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: normal;
+  margin-left: 64px;
 }
 
 .footer-h5 {
   width: 400px;
+  float: left;
 }
 
 .icon-links {
-  height: 40px;
-  width: 40px;
-  margin: 7px;
+  height: 35px;
+  width: 35px;
+  margin: 2px;
   color: var(--font-color);
 }
