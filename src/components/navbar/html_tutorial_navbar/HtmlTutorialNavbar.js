@@ -56,14 +56,14 @@ function HtmlTutorialNavbar() {
           <NavText style={linkText}>HTML Tutorial</NavText>
           <NavItem eventKey="html-tutorial/Home">
             <NavText>
-              <NavLink to="#" style={linkText}>
+              <NavLink to="../../../pages/html_tutorials/HtmlHome" style={linkText}>
                 HTML Home
               </NavLink>
             </NavText>
           </NavItem>
           <NavItem eventKey="html-tutorial/Introduction">
             <NavText>
-              <NavLink to="#" style={linkText}>
+              <NavLink to="../../../pages/html_tutorials/HtmlIntroduction" style={linkText}>
                 HTML Introduction
               </NavLink>
             </NavText>

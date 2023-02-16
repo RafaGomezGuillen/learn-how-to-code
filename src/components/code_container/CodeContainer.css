@@ -1,3 +1,7 @@
+.code-div > .code-container > .code-inside {
+  width: 90%;
+}
+
 .code-container {
   background-color: var(--background-code-container);
   border-radius: 10px;
@@ -28,12 +32,24 @@
 }
 
 .code-inside {
-  width: 90%;
+  width: 95%;
   margin-right: 15px;
   float: right;
   background-color: var(--background-code-inside);
   text-align: left;
   color: var(--font-color);
+}
+
+@media only screen and (max-width: 1100px) {
+  .code-inside {
+    width: 93%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .code-inside {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 630px) {

@@ -7,9 +7,10 @@ var data = require("./Searcher.json");
 
 function Filter(value) {
   let filter_name = "";
-  if (value === "prueba") {
-    filter_name = "../../pages/Prueba";
-  }
+  if (value === "home") filter_name = "../../pages/Home";
+  if (value === "html home") filter_name = "../../pages/html_tutorials/HtmlHome";
+  if (value === "html introduction") filter_name = "../../pages/html_tutorials/HtmlIntroduction";
+
   return filter_name;
 }
 
@@ -44,9 +45,12 @@ function Searcher() {
         <div className="searcher">
           <div className="search-container">
             <div className="search-inner">
-              <input type="text" value={value} onChange={onChange} /> 
+              <input type="text" value={value} onChange={onChange} />
               <Link to={docName}>
-                <button onClick={() => onSearch(value)} className="searcher-btn">
+                <button
+                  onClick={() => onSearch(value)}
+                  className="searcher-btn"
+                >
                   {" "}
                   <BiSearchAlt />{" "}
                 </button>
