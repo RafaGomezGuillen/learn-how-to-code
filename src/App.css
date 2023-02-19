@@ -81,26 +81,15 @@ body {
   padding: 25px;
 }
 
-.redirection {
-  padding: 25px;
-  color: var(--font-color);
+.content-code table {
+  border: solid var(--background-color-header);
+  margin: 0 auto;
 }
 
-.redirection a {
-  padding: 15px;
-  font-size: 18px;
-  line-height: 27px;
+.content-code tr,
+.content-code td {
+  border: solid var(--background-color-header);
   text-align: center;
-  color: var(--font-color);
-  text-decoration: none;
-  background-color: var(--background-color-header);
-  border-radius: 10px;
-}
-
-.redirection a:hover {
-  color: var(--font-color);
-  text-decoration: none;
-  opacity: 70%;
 }
 
 .links {

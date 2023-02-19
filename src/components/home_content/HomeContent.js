@@ -3,6 +3,7 @@ import "./HomeContent.css";
 import "../searcher/Searcher.css";
 import SearcherHomeContent from "./searcher_home_content/SearcherHomeContent";
 import CodeContainer from "../code_container/CodeContainer";
+import Footer from "../footer/Footer";
 
 function HomeContent() {
   return (
@@ -142,6 +143,7 @@ function HomeContent() {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

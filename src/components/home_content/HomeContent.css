@@ -87,12 +87,17 @@
     visibility: hidden;
   }
 
-  .presentation, .presentation-code {
+  .presentation,
+  .presentation-code {
     width: 100%;
   }
 
   .presentation-inside {
     margin: 0 auto;
+    width: 100%;
+  }
+
+  .presentation-code + .footer {
     width: 100%;
   }
 }

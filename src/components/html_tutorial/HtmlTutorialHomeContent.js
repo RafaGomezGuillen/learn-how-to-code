@@ -1,5 +1,6 @@
 import React from "react";
 import CodeContainer from "../code_container/CodeContainer";
+import Redirection from "../redirection/Redirection";
 
 function HtmlTutorialHomeContent() {
   return (
@@ -64,14 +65,12 @@ function HtmlTutorialHomeContent() {
         </p>
       </div>
       <hr></hr>
-      <div className="redirection">
-        <a href="../../../pages/Home" style={{ float: "left" }}>
-          &lt; Home
-        </a>
-        <a href="../../../pages/html_tutorials/HtmlIntroduction" style={{ float: "right" }}>
-          Introduction &gt;
-        </a>
-      </div>
+      <Redirection
+        link1={"../../../pages/Home"}
+        link2={"../../../pages/html_tutorials/HtmlIntroduction"}
+        name1={"Home"}
+        name2={"Introduction"}
+      />
     </div>
   );
 }
