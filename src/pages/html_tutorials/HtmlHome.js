@@ -1,13 +1,13 @@
 import React from "react";
 import HtmlTutorialNavbar from "../../components/navbar/html_tutorial_navbar/HtmlTutorialNavbar";
-import HtmlTutorialHomeContent from "../../components/html_tutorial/HtmlTutorialHomeContent";
+import HtmlHomeContent from "../../components/html_tutorial/HtmlHomeContent";
 import Footer from "../../components/footer/Footer";
 
 function HtmlHome() {
   return (
     <>
       <HtmlTutorialNavbar />
-      <HtmlTutorialHomeContent />
+      <HtmlHomeContent />
       <Footer />
     </>
   );

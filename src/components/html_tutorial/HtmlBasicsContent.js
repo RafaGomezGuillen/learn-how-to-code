@@ -137,9 +137,9 @@ function HtmlBasicsContent() {
       <hr></hr>
       <Redirection
         link1={"../../../pages/html_tutorials/HtmlIntroduction"}
-        link2={"../../../pages/html_tutorials/HtmlIntroduction"}
+        link2={"../../../pages/html_tutorials/HtmlText"}
         name1={"Introduction"}
-        name2={"HTML <p>"}
+        name2={"HTML Text"}
       />
     </div>
   );

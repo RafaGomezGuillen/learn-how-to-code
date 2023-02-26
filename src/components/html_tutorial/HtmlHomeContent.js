@@ -2,7 +2,7 @@ import React from "react";
 import CodeContainer from "../code_container/CodeContainer";
 import Redirection from "../redirection/Redirection";
 
-function HtmlTutorialHomeContent() {
+function HtmlHomeContent() {
   return (
     <div className="main">
       <h1>HTML HOME</h1>
@@ -75,4 +75,4 @@ function HtmlTutorialHomeContent() {
   );
 }
 
-export default HtmlTutorialHomeContent;
+export default HtmlHomeContent;

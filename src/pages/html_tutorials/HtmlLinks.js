@@ -1,16 +1,16 @@
 import React from "react";
 import HtmlTutorialNavbar from "../../components/navbar/html_tutorial_navbar/HtmlTutorialNavbar";
-import HtmlIntroductionContent from "../../components/html_tutorial/HtmlIntroductionContent";
+import HtmlLinksContent from "../../components/html_tutorial/HtmlLinksContent";
 import Footer from "../../components/footer/Footer";
 
-function HtmlIntroduction() {
+function HtmlLinks() {
   return (
     <>
       <HtmlTutorialNavbar />
-      <HtmlIntroductionContent />
+      <HtmlLinksContent />
       <Footer />
     </>
   );
 }
 
-export default HtmlIntroduction;
+export default HtmlLinks;

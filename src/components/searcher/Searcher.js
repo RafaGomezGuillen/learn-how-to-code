@@ -3,30 +3,46 @@ import "./Searcher.css";
 import { Link } from "react-router-dom";
 import { BiSearchAlt } from "react-icons/bi";
 
-var data = require("./Searcher.json");
-
 function Filter(value) {
-  let filter_name = "";
-  if (value === "home") filter_name = "../../pages/Home";
-  if (value === "html home") filter_name = "../../pages/html_tutorials/HtmlHome";
-  if (value === "html introduction") filter_name = "../../pages/html_tutorials/HtmlIntroduction";
+  const data = require("./Searcher.json");
+  const filterMap = {
+    home: "../../pages/Home",
+    "html home": "../../pages/html_tutorials/HtmlHome",
+    "html introduction": "../../pages/html_tutorials/HtmlIntroduction",
+    "html basics": "../../pages/html_tutorials/HtmlBasics",
+    "html text": "../../pages/html_tutorials/HtmlText",
+    "html lists": "../../pages/html_tutorials/HtmlLists",
+    "html images": "../../pages/html_tutorials/HtmlImages",
+    "html tables": "../../pages/html_tutorials/HtmlTables",
+    "html links": "../../pages/html_tutorials/HtmlLinks",
+    "html forms": "../../pages/html_tutorials/HtmlForms",
+  };
+  return filterMap[value] || "";
+}
 
-  return filter_name;
+function SearchTerm({ value, onChange }) {
+  return <input type="text" value={value} onChange={onChange} />;
+}
+
+function SearchButton({ onSearch }) {
+  return (
+    <button onClick={onSearch} className="searcher-btn">
+      <BiSearchAlt />
+    </button>
+  );
 }
 
 function Searcher() {
   const [value, setValue] = useState("");
   const [showDiv, setShowDiv] = useState(false);
-  let docName = Filter(value);
+  const docName = Filter(value);
 
   const onChange = (event) => {
     setValue(event.target.value);
   };
 
-  const onSearch = (searchTerm) => {
-    setValue(searchTerm);
-    // our api to fetch the search result
-    console.log("search ", searchTerm);
+  const onSearch = () => {
+    console.log("search ", value);
   };
 
   return (
@@ -35,29 +51,19 @@ function Searcher() {
         onClick={() => setShowDiv(!showDiv)}
         className="show-searcher-btn"
       >
-        {showDiv ? (
-          <BiSearchAlt className="show-searcher-img" />
-        ) : (
-          <BiSearchAlt className="show-searcher-img" />
-        )}
+        <BiSearchAlt className="show-searcher-img" />
       </button>
       {showDiv && (
         <div className="searcher">
           <div className="search-container">
             <div className="search-inner">
-              <input type="text" value={value} onChange={onChange} />
+              <SearchTerm value={value} onChange={onChange} />
               <Link to={docName}>
-                <button
-                  onClick={() => onSearch(value)}
-                  className="searcher-btn"
-                >
-                  {" "}
-                  <BiSearchAlt />{" "}
-                </button>
+                <SearchButton onSearch={onSearch} />
               </Link>
             </div>
             <div className="dropdown">
-              {data
+              {require("./Searcher.json")
                 .filter((item) => {
                   const searchTerm = value.toLowerCase();
                   const fullName = item.document_name.toLowerCase();
@@ -71,7 +77,7 @@ function Searcher() {
                 .slice(0, 10)
                 .map((item) => (
                   <div
-                    onClick={() => onSearch(item.document_name)}
+                    onClick={() => setValue(item.document_name)}
                     className="dropdown-row"
                     key={item.document_name}
                   >
