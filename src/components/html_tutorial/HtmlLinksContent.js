@@ -136,37 +136,71 @@ function HtmlLinksContent() {
           insideHeight={"65%"}
         />
       </div>
+      <hr></hr>
       <div className="content-code">
         <h2>Accessing to other files in the same folder</h2>
         <p>
-          Here we are going to see how to access other files in the same folder. Here it is the structure of the folder.
+          Here we are going to see how to access other files in the same folder.
+          Here it is the structure of the folder.
         </p>
         <Images file={"struct"} />
         <h2>Link to a file that is in the same directory</h2>
         <p>
-          For example, if you want to access to the file subpage1.html that is in the same folder of subpage2.html or subpage3.html, you can try:
+          For example, if you want to access to the subpage2.html or
+          subpage3.html that is in the same folder of subpage1.html, you can
+          try:
         </p>
-        
+
         <CodeContainer
           title={"HTML"}
           code={
-            '<!-- In the subpage1.html -->\n<a href="subpage2.html">Subpage 2</a>\n<a href="subpage3.html">Subpage 3</a>'
+            '<!-- In subpage1.html -->\n<a href="subpage2.html">Subpage 2</a>\n<a href="subpage3.html">Subpage 3</a>'
           }
           containerHeight={"200px"}
           insideHeight={"45%"}
         />
-        <h2>Create a link to a file that is in a subfolder of the same level</h2>
+        <h2>
+          Create a link to a file that is in a subfolder of the same level
+        </h2>
         <p>
-          For example, if you want to access to the file index.html and you want to access to a subfolder of the same level, you can try:
+          For example, if you want to access to the subpage1.html, subpage2.html
+          or subpage3.html that is in a subfolder of the same level in
+          index.html, you can try:
         </p>
-        
+
         <CodeContainer
           title={"HTML"}
           code={
-            '<!-- In the subpage1.html -->\n<a href="subpage2.html">Subpage 2</a>\n<a href="subpage3.html">Subpage 3</a>'
+            '<!-- In index.html -->\n<a href="html_files/subpage1.html">Subpage 1</a>\n<a href="html_files/subpage3.html">Subpage 3</a>\n<a href="html_files/subpage3.html">Subpage 3</a>'
+          }
+          containerHeight={"220px"}
+          insideHeight={"47%"}
+        />
+        <h2>Link to a file that is at a higher level</h2>
+        <p>
+          For example, if you want to access to index.html that is a file that
+          is at a higher level of subpage1.html, you can try:
+        </p>
+
+        <CodeContainer
+          title={"HTML"}
+          code={'<!-- In subpage1.html -->\n<a href="../index.html">index</a>'}
+          containerHeight={"180px"}
+          insideHeight={"37%"}
+        />
+        <h2>Link to a file located in a different subfolder</h2>
+        <p>
+          For example, if you want to access to script.js that is located in a
+          different subfolder of subpage1.html, you can try:
+        </p>
+
+        <CodeContainer
+          title={"HTML"}
+          code={
+            '<!-- In subpage1.html -->\n<script type="text/javascript" src="../js_files/script.js"></script>'
           }
           containerHeight={"200px"}
-          insideHeight={"45%"}
+          insideHeight={"40%"}
         />
       </div>
       <hr></hr>
