@@ -13,6 +13,8 @@ import Preformatted from "./Preformatted.jpg";
 import BasicTables from "./BasicTables.jpg";
 import Merging from "./Merging.jpg";
 import AdvancedTable from "./AdvancedTable.jpg";
+import BasicLinks from "./BasicLinks.png";
+import struct from "./struct.png";
 
 function Images({ file }) {
   let imageSrc;
@@ -56,6 +58,12 @@ function Images({ file }) {
       break;
     case 'AdvancedTable':
       imageSrc = AdvancedTable;
+      break;
+    case 'BasicLinks':
+      imageSrc = BasicLinks;
+      break;
+    case 'struct':
+      imageSrc = struct;
       break;
     default:
       imageSrc = null;

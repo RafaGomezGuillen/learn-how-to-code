@@ -16,6 +16,7 @@
   margin: 0 auto;
   background-color: #FEA82F;
   padding: 15px;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 1358px) {

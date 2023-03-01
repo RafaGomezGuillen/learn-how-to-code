@@ -12,6 +12,7 @@
   left: 64px;
   bottom: 55px;
   padding: 5px;
+  z-index: 1;
 }
 
 .dropdown {
