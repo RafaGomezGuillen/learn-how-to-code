@@ -15,6 +15,11 @@ import Merging from "./Merging.jpg";
 import AdvancedTable from "./AdvancedTable.jpg";
 import BasicLinks from "./BasicLinks.png";
 import struct from "./struct.png";
+import BasicForm from "./BasicForm.png";
+import TextBox from "./TextBox.png";
+import PasswordBox from "./PasswordBox.png";
+import CheckBox from "./CheckBox.png";
+import Radiobutton from "./Radiobutton.png";
 
 function Images({ file }) {
   let imageSrc;
@@ -64,6 +69,21 @@ function Images({ file }) {
       break;
     case 'struct':
       imageSrc = struct;
+      break;
+    case 'BasicForm':
+      imageSrc = BasicForm;
+      break;
+    case 'TextBox':
+      imageSrc = TextBox;
+      break;
+    case 'PasswordBox':
+      imageSrc = PasswordBox;
+      break;
+    case 'CheckBox':
+      imageSrc = CheckBox;
+      break;
+    case 'Radiobutton':
+      imageSrc = Radiobutton;
       break;
     default:
       imageSrc = null;
