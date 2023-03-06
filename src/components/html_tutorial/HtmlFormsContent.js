@@ -207,24 +207,62 @@ function HtmlFormsContent() {
         />
         <Images file={"CheckBox"} />
         <hr></hr>
-        <h2>radiobutton</h2>
+        <h2>Radiobutton</h2>
         <p>
           Radiobutton type controls are similar to checkbox type controls, but
           they have one very important difference: they are mutually exclusive.
-          Radiobuttons are used when the user can only choose one option
-          among the different related options that are present. Every time an
-          option is selected, the other option is automatically deselected that I
-          was selecting.
+          Radiobuttons are used when the user can only choose one option among
+          the different related options that are present. Every time an option
+          is selected, the other option is automatically deselected that I was
+          selecting.
         </p>
         <CodeContainer
           title={"HTML"}
           code={
-            'Sex<br>\n<input type="radio" name="sex" value="man" checked="checked"> Man<br>\n<input type="radio" name="sex" value="woman"> Woman'
+            'Gender<br>\n<input type="radio" name="Gender" value="man" checked="checked"> Man<br>\n<input type="radio" name="Gender" value="woman"> Woman'
           }
           containerHeight={"200px"}
           insideHeight={"40%"}
         />
         <Images file={"Radiobutton"} />
+        <hr></hr>
+        <h2>Form submit button</h2>
+        <p>
+          The value of the <strong>type</strong> attribute for this form control
+          is <strong>submit</strong>. The browser is responsible for
+          automatically sending the data when the user clicks on this type of
+          button. The value of <strong>value</strong> attribute is the text
+          displayed by the button. If the <strong>value</strong> attribute is
+          not set, the browser displays the predefined text Send Query..
+        </p>
+        <CodeContainer
+          title={"HTML"}
+          code={
+            '<input type="submit" name="search" value="Search" />'
+          }
+          containerHeight={"150px"}
+          insideHeight={"30%"}
+        />
+        <Images file={"SubmitButton"} />
+        <hr></hr>
+        <h2>Attached files</h2>
+        <p>
+          The value of the <strong>type</strong> attribute for this form control
+          is <strong>submit</strong>. The browser is responsible for
+          automatically sending the data when the user clicks on this type of
+          button. The value of <strong>value</strong> attribute is the text
+          displayed by the button. If the <strong>value</strong> attribute is
+          not set, the browser displays the predefined text Send Query..
+        </p>
+        <CodeContainer
+          title={"HTML"}
+          code={
+            '<input type="submit" name="search" value="Search" />'
+          }
+          containerHeight={"150px"}
+          insideHeight={"30%"}
+        />
+        <Images file={"SubmitButton"} />
       </div>
       <hr></hr>
       <Redirection

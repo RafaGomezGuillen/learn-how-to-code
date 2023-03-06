@@ -20,6 +20,7 @@ import TextBox from "./TextBox.png";
 import PasswordBox from "./PasswordBox.png";
 import CheckBox from "./CheckBox.png";
 import Radiobutton from "./Radiobutton.png";
+import SubmitButton from "./SubmitButton.png";
 
 function Images({ file }) {
   let imageSrc;
@@ -84,6 +85,9 @@ function Images({ file }) {
       break;
     case 'Radiobutton':
       imageSrc = Radiobutton;
+      break;
+    case 'SubmitButton':
+      imageSrc = SubmitButton;
       break;
     default:
       imageSrc = null;
