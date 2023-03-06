@@ -1,7 +1,6 @@
 import React from "react";
 import CodeContainer from "../code_container/CodeContainer";
 import Redirection from "../redirection/Redirection";
-import Images from "../images/Images";
 
 function HtmlTablesContent() {
   return (
@@ -124,7 +123,37 @@ function HtmlTablesContent() {
           containerHeight={"795px"}
           insideHeight={"85%"}
         />
-        <Images file={"BasicTables"} />
+        <div className="examples">
+          <h1>List of courses</h1>
+          <table>
+            <tr>
+              <td>
+                <strong>Course</strong>
+              </td>
+              <td>
+                <strong>Hours</strong>
+              </td>
+              <td>
+                <strong>Schedule</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>20</td>
+              <td>16:00 - 20:00</td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>20</td>
+              <td>16:00 - 20:00</td>
+            </tr>
+            <tr>
+              <td>JS</td>
+              <td>60</td>
+              <td>16:00 - 20:00</td>
+            </tr>
+          </table>
+        </div>
       </div>
       <hr></hr>
       <div className="content-code">
@@ -143,7 +172,29 @@ function HtmlTablesContent() {
           containerHeight={"770px"}
           insideHeight={"85%"}
         />
-        <Images file={"Merging"} />
+        <div className="examples">
+          {" "}
+          <h1>Merging columns</h1>
+          <table border="1">
+            <tr>
+              <td colspan="2">A</td>
+            </tr>
+            <tr>
+              <td>B</td>
+              <td>C</td>
+            </tr>
+          </table>
+          <h1>Merging rows</h1>
+          <table border="1">
+            <tr>
+              <td>A</td>
+              <td rowspan="2">B</td>
+            </tr>
+            <tr>
+              <td>C</td>
+            </tr>
+          </table>
+        </div>
       </div>
       <hr></hr>
       <div className="content-code">
@@ -153,8 +204,12 @@ function HtmlTablesContent() {
           &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt; tags. The header of
           the table is defined with the tag &lt;thead&gt;, the footer of the
           table isdefined by &lt;tfoot&gt; and each data section is defined by a
-          &lt;tbody&gt; tag.<br></br><br></br>
-          Each table can contain only one header and one footer, but can include an unlimited number of sections. If a header and/or footer is defined, the &lt;thead&gt; and/or &lt;tfoot&gt; tagsmust be placed immediately before any &lt;tbody&gt; tag
+          &lt;tbody&gt; tag.<br></br>
+          <br></br>
+          Each table can contain only one header and one footer, but can include
+          an unlimited number of sections. If a header and/or footer is defined,
+          the &lt;thead&gt; and/or &lt;tfoot&gt; tagsmust be placed immediately
+          before any &lt;tbody&gt; tag
         </p>
         <CodeContainer
           title={"HTML"}
@@ -164,7 +219,75 @@ function HtmlTablesContent() {
           containerHeight={"1540px"}
           insideHeight={"93%"}
         />
-        <Images file={"AdvancedTable"} />
+        <div className="examples">
+          {" "}
+          <h3>Sales Analysis</h3>
+          <table border="1" summary="Annual sales analysis">
+            <caption>Annual sales analysis</caption>
+            <thead>
+              <tr>
+                <th rowspan="2" scope="col">
+                  Year
+                </th>
+                <th colspan="4" scope="col">
+                  sales expansion
+                </th>
+              </tr>
+              <tr>
+                <th scope="col">Product A</th>
+                <th scope="col">Product B</th>
+                <th scope="col">Product C</th>
+                <th scope="col">Product D</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th rowspan="2" scope="col">
+                  Year
+                </th>
+                <th scope="col">Product A</th>
+                <th scope="col">Product B</th>
+                <th scope="col">Product C</th>
+                <th scope="col">Product D</th>
+              </tr>
+              <tr>
+                <th colspan="4" scope="col">
+                  sales expansion
+                </th>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <th scope="row">N-3</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <th scope="row">N-2</th>
+                <td>3</td>
+                <td>5</td>
+                <td>8</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">N-1</th>
+                <td>4</td>
+                <td>4</td>
+                <td>7</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th scope="row">N</th>
+                <td>5</td>
+                <td>7</td>
+                <td>6</td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <hr></hr>
       <Redirection

@@ -1,7 +1,6 @@
 import React from "react";
 import CodeContainer from "../code_container/CodeContainer";
 import Redirection from "../redirection/Redirection";
-import Images from "../images/Images";
 
 function HtmlListsContent() {
   return (
@@ -44,7 +43,15 @@ function HtmlListsContent() {
           containerHeight={"455px"}
           insideHeight={"75%"}
         />
-        <Images file={"UnorderedLists"} />
+        <div className="examples">
+          <h1>Menu</h1>
+          <ul>
+            <li>Home</li>
+            <li>News</li>
+            <li>Articles</li>
+            <li>Contact</li>
+          </ul>
+        </div>
       </div>
       <hr></hr>
       <div className="content-code">
@@ -62,7 +69,14 @@ function HtmlListsContent() {
           containerHeight={"455px"}
           insideHeight={"75%"}
         />
-        <Images file={"OrderedLists"} />
+        <div className="examples">
+          <h1>Instructions</h1>
+          <ol>
+            <li>Plug in correctly</li>
+            <li>check connections</li>
+            <li>turn on the device</li>
+          </ol>
+        </div>
       </div>
       <hr></hr>
       <div className="content-code">
@@ -82,7 +96,21 @@ function HtmlListsContent() {
           containerHeight={"575px"}
           insideHeight={"80%"}
         />
-        <Images file={"DefinitionLists"} />
+        <div className="examples">
+          <h1>metalanguages</h1>
+          <dl>
+            <dt>SGML</dt>
+            <dd>Metalanguage for the definition of other markup languages</dd>
+            <dt>XML</dt>
+            <dd>Language based on SGML and used to describe data</dd>
+            <dt>RSS</dt>
+            <dt>GML</dt>
+            <dt>XHTML</dt>
+            <dt>SVG</dt>
+            <dt>XUL</dt>
+            <dd>XML-derived languages ​​for certain applications</dd>
+          </dl>
+        </div>
       </div>
       <hr></hr>
       <Redirection

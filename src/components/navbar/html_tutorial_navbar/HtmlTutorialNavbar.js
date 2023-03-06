@@ -40,6 +40,12 @@ function HtmlTutorialNavbar() {
             </NavLink>
           </NavText>
         </NavItem>
+        <NavItem eventKey="searcher">
+          <NavIcon>
+            <Searcher />
+          </NavIcon>
+          <NavText style={linkText}>&nbsp;&nbsp;Searcher</NavText>
+        </NavItem>
         <NavItem eventKey="html-tutorial">
           <NavIcon>
             <FaHtml5 style={iconStyle} />
@@ -108,12 +114,6 @@ function HtmlTutorialNavbar() {
               </NavLink>
             </NavText>
           </NavItem>
-        </NavItem>
-        <NavItem eventKey="searcher">
-          <NavIcon>
-            <Searcher />
-          </NavIcon>
-          <NavText style={linkText}>&nbsp;&nbsp;Searcher</NavText>
         </NavItem>
         <NavItem eventKey="dark">
           <NavIcon>

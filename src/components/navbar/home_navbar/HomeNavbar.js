@@ -44,6 +44,12 @@ function HomeNavbar() {
             </NavLink>
           </NavText>
         </NavItem>
+        <NavItem eventKey="searcher">
+          <NavIcon>
+            <Searcher />
+          </NavIcon>
+          <NavText style={linkText}>&nbsp;&nbsp;Searcher</NavText>
+        </NavItem>
         <NavItem eventKey="html">
           <NavIcon>
             <FaHtml5 style={iconStyle} />
@@ -58,7 +64,7 @@ function HomeNavbar() {
           </NavItem>
           <NavItem eventKey="html/Exercises">
             <NavText>
-              <NavLink to="/pages/Prueba" style={linkText}>
+              <NavLink to="/pages/html_exercises/HtmlExercises" style={linkText}>
                 HTML Exercises
               </NavLink>
             </NavText>
@@ -123,13 +129,6 @@ function HomeNavbar() {
               </NavLink>
             </NavText>
           </NavItem>
-        </NavItem>
-
-        <NavItem eventKey="searcher">
-          <NavIcon>
-            <Searcher />
-          </NavIcon>
-          <NavText style={linkText}>&nbsp;&nbsp;Searcher</NavText>
         </NavItem>
         <NavItem eventKey="dark">
           <NavIcon>

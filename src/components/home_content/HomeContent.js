@@ -31,7 +31,7 @@ function HomeContent() {
           <a
             id="code-link-color-2"
             className="code-link"
-            href="../../pages/Prueba"
+            href="../../pages/html_exercises/HtmlExercises"
           >
             HTML exercises
           </a>

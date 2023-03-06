@@ -9,6 +9,7 @@ import HtmlImages from "./pages/html_tutorials/HtmlImages";
 import HtmlTables from "./pages/html_tutorials/HtmlTables";
 import HtmlLinks from "./pages/html_tutorials/HtmlLinks";
 import HtmlForms from "./pages/html_tutorials/HtmlForms";
+import HtmlExercises from "./pages/html_exercises/HtmlExercises";
 import { Routes, Route } from "react-router-dom";
 import "./App.css"
 
@@ -27,6 +28,7 @@ function App() {
         <Route exact path="/pages/html_tutorials/HtmlTables" element={<HtmlTables />} />
         <Route exact path="/pages/html_tutorials/HtmlLinks" element={<HtmlLinks />} />
         <Route exact path="/pages/html_tutorials/HtmlForms" element={<HtmlForms />} />
+        <Route exact path="/pages/html_exercises/HtmlExercises" element={<HtmlExercises />} />
       </Routes>
     </>
   );

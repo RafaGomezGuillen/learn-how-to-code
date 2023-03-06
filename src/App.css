@@ -97,3 +97,16 @@ body {
 .links {
   color: var(--font-color);
 }
+
+.examples {
+  margin: 15px;
+  border: solid var(--background-color-header);
+}
+
+.examples * {
+  margin-left: 10px;
+}
+
+.examples input {
+  width: 200px;
+}

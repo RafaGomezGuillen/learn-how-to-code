@@ -1,7 +1,6 @@
 import React from "react";
 import CodeContainer from "../code_container/CodeContainer";
 import Redirection from "../redirection/Redirection";
-import Images from "../images/Images";
 
 function HtmlTextContent() {
   return (
@@ -51,7 +50,19 @@ function HtmlTextContent() {
           containerHeight={"425px"}
           insideHeight={"75%"}
         />
-        <Images file={"Paragraphs"}/>
+        <div className="examples">
+          <p>
+            This is the text that forms the first paragraph of the page.
+            Paragraphs can span multiple lines and the browser takes care of it
+            to adjust its length to the size of the window.
+          </p>
+
+          <p>
+            The second paragraph of the page is also defined by enclosing its
+            text with the p tag. The browser also takes care ofautomatically
+            separate each paragraph.
+          </p>
+        </div>
       </div>
       <hr></hr>
       <div className="content-code">
@@ -79,7 +90,14 @@ function HtmlTextContent() {
           containerHeight={"420px"}
           insideHeight={"70%"}
         />
-        <Images file={"Sections"}/>
+      </div>
+      <div className="examples">
+        <h1>page headline</h1>
+        <p>Introductory paragraph...</p>
+        <h2>The first sub-section</h2>
+        <p>Content paragraph...</p>
+        <h2>Another sub-section</h2>
+        <p>More content paragraph...</p>
       </div>
       <hr></hr>
       <div className="content-code">
@@ -108,7 +126,24 @@ function HtmlTextContent() {
           containerHeight={"590px"}
           insideHeight={"80%"}
         />
-        <Images file={"Basic"}/>
+        <div className="examples">
+          <p>
+            The HTML language allows you to mark some segments of text as{" "}
+            <em>very important</em>
+            and other segments as<strong>the most important</strong>.
+          </p>
+
+          <p>
+            HTML, an acronym for Hyper Text Markup Language (hypertext markup
+            language <ins>hypertext marks</ins>) is a markup language designed
+            to structure texts and present them in the form of hypertext.
+          </p>
+
+          <blockquote>
+            "The value of this attribute is a URL indicating the source document
+            of the citation."
+          </blockquote>
+        </div>
       </div>
       <hr></hr>
       <div className="content-code">
@@ -139,7 +174,30 @@ function HtmlTextContent() {
           containerHeight={"590px"}
           insideHeight={"80%"}
         />
-        <Images file={"Advanced"}/>
+        <div className="examples">
+          <p>
+            The <acronym title="HyperText Markup Language">HTML</acronym>
+            language is standardizedby the
+            <acronym title="World Wide Web Consortium">W3C</acronym>.
+          </p>
+          <p>
+            With these symptoms, it could be a case of
+            <dfn
+              title="Subjective image or sensation,characteristic of a sense, 
+    determined by another sensation that affects a sensedifferent"
+            >
+              {" "}
+              synesthesia
+            </dfn>
+          </p>
+          <p>
+            As <cite>Mahatma Gandhi</cite>said:
+            <blockquote>
+              Live as if you were to die tomorrow and learn as if you were to
+              live forever.
+            </blockquote>
+          </p>
+        </div>
       </div>
       <hr></hr>
       <div className="content-code">
@@ -162,7 +220,14 @@ function HtmlTextContent() {
           containerHeight={"420px"}
           insideHeight={"70%"}
         />
-        <Images file={"Generic"}/>
+        <div className="examples">
+          <p>
+            <strong>Important</strong>: if you want to contact the company
+            <acronym> ACME</acronym>, you can do so by calling
+            <span class="telephone"> 900555555 </span>or via the email address
+            <span class="email">contact@acme.org</span>
+          </p>
+        </div>
       </div>
       <hr></hr>
       <div className="content-code">
@@ -187,7 +252,17 @@ function HtmlTextContent() {
           containerHeight={"420px"}
           insideHeight={"70%"}
         />
-        <Images file={"Whitespace"}/>
+        <div className="examples">
+          <p>
+            This first paragraph does not contain line breaks or any other type
+            of spacing.
+          </p>
+          <p>
+            This second paragraph does contain breaks<br></br> of<br></br>line
+            <br></br>
+            and &nbsp;&nbsp;another &nbsp;kind &nbsp;of &nbsp;&nbsp;spacing.
+          </p>
+        </div>
       </div>
       <hr></hr>
       <div className="content-code">
@@ -209,7 +284,13 @@ function HtmlTextContent() {
           containerHeight={"350px"}
           insideHeight={"70%"}
         />
-        <Images file={"Preformatted"}/>
+        <div className="examples">
+          <pre>
+            The label honors whitespace and displays the text exactly as it is
+            written.
+          </pre>
+          <code>The code tag does not respect whitespace.</code>
+        </div>
       </div>
       <hr></hr>
       <div className="content-code">
@@ -220,108 +301,101 @@ function HtmlTextContent() {
           the characters that are commonly used in texts cannot beinclude
           directly on web pages.
         </p>
-        <table>
-          <tr>
-            <td>Entity</td>
-            <td>Character</td>
-            <td>Description</td>
-          </tr>
-          <tr>
-            <td>&amp;lt;</td>
-            <td>&lt;</td>
-            <td>less than.</td>
-          </tr>
-          <tr>
-            <td>&amp;gt;</td>
-            <td>&gt;</td>
-            <td>greater than.</td>
-          </tr>
-          <tr>
-            <td>&amp;amp;</td>
-            <td>&amp;</td>
-            <td>ampersand.</td>
-          </tr>
-          <tr>
-            <td>&amp;quot;</td>
-            <td>&quot;</td>
-            <td>quotation mark.</td>
-          </tr>
-          <tr>
-            <td>&amp;nbsp;</td>
-            <td>(whitespace)</td>
-            <td>non-breaking space.</td>
-          </tr>
-          <tr>
-            <td>&amp;apos;</td>
-            <td>&apos; </td>
-            <td>apostrophe.</td>
-          </tr>
-          <tr>
-            <td>&amp;ntilde;</td>
-            <td>&ntilde;  </td>
-            <td>latin letter n with tilde.</td>
-          </tr>
-          <tr>
-            <td>&amp;Ntilde;</td>
-            <td>&Ntilde; </td>
-            <td>latin capital n letter with tilde.</td>
-          </tr>
-          <tr>
-            <td>&amp;aacute;</td>
-            <td>&aacute; </td>
-            <td>a acute.</td>
-          </tr>
-          <tr>
-            <td>&amp;eacute;</td>
-            <td>&eacute; </td>
-            <td>e acute.</td>
-          </tr>
-          <tr>
-            <td>&amp;iacute;</td>
-            <td>&iacute;  </td>
-            <td>i acute.</td>
-          </tr>
-          <tr>
-            <td>&amp;oacute;</td>
-            <td>&oacute;  </td>
-            <td>o acute.</td>
-          </tr>
-          <tr>
-            <td>&amp;uacute;</td>
-            <td>&uacute; </td>
-            <td>u acute.</td>
-          </tr>
-          <tr>
-            <td>&amp;Aacute;</td>
-            <td>&Aacute;  </td>
-            <td>A acute.</td>
-          </tr>
-          <tr>
-            <td>&amp;Eacute;</td>
-            <td>&Eacute;  </td>
-            <td>E acute.</td>
-          </tr>
-          <tr>
-            <td>&amp;Iacute;</td>
-            <td>&Iacute;  </td>
-            <td>I acute.</td>
-          </tr>
-          <tr>
-            <td>&amp;Oacute;</td>
-            <td>&Oacute;  </td>
-            <td>O acute.</td>
-          </tr>
-          <tr>
-            <td>&amp;Uacute;</td>
-            <td>&Uacute;  </td>
-            <td>U acute.</td>
-          </tr>
-          <tr>
-            <td>&amp;euro;</td>
-            <td>&euro; </td>
-            <td>euro.</td>
-          </tr>
-        </table>
+        <ul>
+          <li>&amp;lt;</li>
+          <li>&lt;</li>
+          <li>less than.</li>
+        </ul>
+        <ul>
+          <li>&amp;gt;</li>
+          <li>&gt;</li>
+          <li>greater than.</li>
+        </ul>
+        <ul>
+          <li>&amp;amp;</li>
+          <li>&amp;</li>
+          <li>ampersand.</li>
+        </ul>
+        <ul>
+          <li>&amp;quot;</li>
+          <li>&quot;</li>
+          <li>quotation mark.</li>
+        </ul>
+        <ul>
+          <li>&amp;nbsp;</li>
+          <li>(whitespace)</li>
+          <li>non-breaking space.</li>
+        </ul>
+        <ul>
+          <li>&amp;apos;</li>
+          <li>&apos; </li>
+          <li>aposulophe.</li>
+        </ul>
+        <ul>
+          <li>&amp;ntilde;</li>
+          <li>&ntilde; </li>
+          <li>latin letter n with tilde.</li>
+        </ul>
+        <ul>
+          <li>&amp;Ntilde;</li>
+          <li>&Ntilde; </li>
+          <li>latin capital n letter with tilde.</li>
+        </ul>
+        <ul>
+          <li>&amp;aacute;</li>
+          <li>&aacute; </li>
+          <li>a acute.</li>
+        </ul>
+        <ul>
+          <li>&amp;eacute;</li>
+          <li>&eacute; </li>
+          <li>e acute.</li>
+        </ul>
+        <ul>
+          <li>&amp;iacute;</li>
+          <li>&iacute; </li>
+          <li>i acute.</li>
+        </ul>
+        <ul>
+          <li>&amp;oacute;</li>
+          <li>&oacute; </li>
+          <li>o acute.</li>
+        </ul>
+        <ul>
+          <li>&amp;uacute;</li>
+          <li>&uacute; </li>
+          <li>u acute.</li>
+        </ul>
+        <ul>
+          <li>&amp;Aacute;</li>
+          <li>&Aacute; </li>
+          <li>A acute.</li>
+        </ul>
+        <ul>
+          <li>&amp;Eacute;</li>
+          <li>&Eacute; </li>
+          <li>E acute.</li>
+        </ul>
+        <ul>
+          <li>&amp;Iacute;</li>
+          <li>&Iacute; </li>
+          <li>I acute.</li>
+        </ul>
+        <ul>
+          <li>&amp;Oacute;</li>
+          <li>&Oacute; </li>
+          <li>O acute.</li>
+        </ul>
+        <ul>
+          <li>&amp;Uacute;</li>
+          <li>&Uacute; </li>
+          <li>U acute.</li>
+        </ul>
+        <ul>
+          <li>&amp;euro;</li>
+          <li>&euro; </li>
+          <li>euro.</li>
+        </ul>
       </div>
       <hr></hr>
       <Redirection

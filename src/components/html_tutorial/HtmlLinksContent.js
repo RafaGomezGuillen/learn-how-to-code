@@ -1,7 +1,6 @@
 import React from "react";
 import CodeContainer from "../code_container/CodeContainer";
 import Redirection from "../redirection/Redirection";
-import Images from "../images/Images";
 
 function HtmlLinksContent() {
   return (
@@ -75,7 +74,7 @@ function HtmlLinksContent() {
           containerHeight={"840px"}
           insideHeight={"86%"}
         />
-        <Images file={"BasicLinks"} />
+        {/* <Images file={"BasicLinks"} /> */}
       </div>
       <hr></hr>
       <div className="content-code">
@@ -143,7 +142,7 @@ function HtmlLinksContent() {
           Here we are going to see how to access other files in the same folder.
           Here it is the structure of the folder.
         </p>
-        <Images file={"struct"} />
+        {/* <Images file={"struct"} /> */}
         <h2>Link to a file that is in the same directory</h2>
         <p>
           For example, if you want to access to the subpage2.html or
