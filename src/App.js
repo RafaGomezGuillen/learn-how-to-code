@@ -10,8 +10,21 @@ import HtmlTables from "./pages/html_tutorials/HtmlTables";
 import HtmlLinks from "./pages/html_tutorials/HtmlLinks";
 import HtmlForms from "./pages/html_tutorials/HtmlForms";
 import HtmlExercises from "./pages/html_exercises/HtmlExercises";
+import CssIntroduction from "./pages/css_tutorials/quarter_01/CssIntroduction";
+import CssBasics from "./pages/css_tutorials/quarter_01/CssBasics";
+import CssBoxModel from "./pages/css_tutorials/quarter_01/CssBoxModel";
+import CssForms from "./pages/css_tutorials/quarter_01/CssForms";
+import CssLayout from "./pages/css_tutorials/quarter_01/CssLayout";
+import CssLinks from "./pages/css_tutorials/quarter_01/CssLinks";
+import CssLists from "./pages/css_tutorials/quarter_01/CssLists";
+import CssMeasureColors from "./pages/css_tutorials/quarter_01/CssMeasureColors";
+import CssPositioningVisual from "./pages/css_tutorials/quarter_01/CssPositioningVisual";
+import CssSelectors from "./pages/css_tutorials/quarter_01/CssSelectors";
+import CssTables from "./pages/css_tutorials/quarter_01/CssTables";
+import CssText from "./pages/css_tutorials/quarter_01/CssText";
 import { Routes, Route } from "react-router-dom";
 import "./App.css"
+
 
 function App() {
   return (
@@ -29,6 +42,18 @@ function App() {
         <Route exact path="/pages/html_tutorials/HtmlLinks" element={<HtmlLinks />} />
         <Route exact path="/pages/html_tutorials/HtmlForms" element={<HtmlForms />} />
         <Route exact path="/pages/html_exercises/HtmlExercises" element={<HtmlExercises />} />
+        <Route exact path="/pages/css_tutorials/quarter_01/CssIntroduction" element={<CssIntroduction />} />
+        <Route exact path="/pages/css_tutorials/quarter_01/CssBasics" element={<CssBasics />} />
+        <Route exact path="/pages/css_tutorials/quarter_01/CssBoxModel" element={<CssBoxModel />} />
+        <Route exact path="/pages/css_tutorials/quarter_01/CssForms" element={<CssForms />} />
+        <Route exact path="/pages/css_tutorials/quarter_01/CssLayout" element={<CssLayout />} />
+        <Route exact path="/pages/css_tutorials/quarter_01/CssLinks" element={<CssLinks />} />
+        <Route exact path="/pages/css_tutorials/quarter_01/CssLists" element={<CssLists />} />
+        <Route exact path="/pages/css_tutorials/quarter_01/CssMeasureColors" element={<CssMeasureColors />} />
+        <Route exact path="/pages/css_tutorials/quarter_01/CssPositioningVisual" element={<CssPositioningVisual />} />
+        <Route exact path="/pages/css_tutorials/quarter_01/CssSelectors" element={<CssSelectors />} />
+        <Route exact path="/pages/css_tutorials/quarter_01/CssTables" element={<CssTables />} />
+        <Route exact path="/pages/css_tutorials/quarter_01/CssText" element={<CssText />} />
       </Routes>
     </>
   );

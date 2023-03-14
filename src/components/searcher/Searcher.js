@@ -16,6 +16,7 @@ function Filter(value) {
     "html tables": "../../pages/html_tutorials/HtmlTables",
     "html links": "../../pages/html_tutorials/HtmlLinks",
     "html forms": "../../pages/html_tutorials/HtmlForms",
+    "html exercises": "../../pages/html_exercises/HtmlExercises",
   };
   return filterMap[value] || "";
 }

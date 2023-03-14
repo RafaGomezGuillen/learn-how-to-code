@@ -55,7 +55,7 @@ function HomeContent() {
           <a
             id="code-link-color"
             className="code-link"
-            href="../../pages/Prueba"
+            href="../../pages/css_tutorials/quarter_01/CssIntroduction"
           >
             CSS tutorials
           </a>
