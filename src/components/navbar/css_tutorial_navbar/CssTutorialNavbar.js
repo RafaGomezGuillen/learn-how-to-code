@@ -1,7 +1,7 @@
 import React from "react";
 import SideNav, { NavItem, NavIcon, NavText } from "@trendmicro/react-sidenav";
 import "@trendmicro/react-sidenav/dist/react-sidenav.css";
-import { FaHtml5, FaHome } from "react-icons/fa";
+import { FaCss3Alt, FaHome } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import DarkMode from "../../dark_mode/DarkMode";
 import Searcher from "../../searcher/Searcher";
@@ -46,71 +46,118 @@ function CssTutorialNavbar() {
           </NavIcon>
           <NavText style={linkText}>&nbsp;&nbsp;Searcher</NavText>
         </NavItem>
-        <NavItem eventKey="html-tutorial">
+        <NavItem eventKey="css-tutorial">
           <NavIcon>
-            <FaHtml5 style={iconStyle} />
+            <FaCss3Alt style={iconStyle} />
           </NavIcon>
-          <NavText style={linkText}>HTML Tutorial</NavText>
-          <NavItem eventKey="html-tutorial/Home">
+          <NavText style={linkText}>CSS Tutorial. 1st quarter.</NavText>
+          <NavItem eventKey="css-tutorial/Introduction">
             <NavText>
-              <NavLink to="../../../pages/html_tutorials/HtmlHome" style={linkText}>
-                HTML Home
+              <NavLink
+                to="../../../pages/css_tutorials/quarter_01/CssIntroduction"
+                style={linkText}
+              >
+                CSS Introduction
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="html-tutorial/Introduction">
+          <NavItem eventKey="css-tutorial/Basics">
             <NavText>
-              <NavLink to="../../../pages/html_tutorials/HtmlIntroduction" style={linkText}>
-                HTML Introduction
+              <NavLink
+                to="../../../pages/css_tutorials/quarter_01/CssBasics"
+                style={linkText}
+              >
+                CSS Basics
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="html-tutorial/Basics">
+          <NavItem eventKey="css-tutorial/Selectors">
             <NavText>
-              <NavLink to="../../../pages/html_tutorials/HtmlBasics" style={linkText}>
-                HTML Basics
+              <NavLink
+                to="../../../pages/css_tutorials/quarter_01/CssSelectors"
+                style={linkText}
+              >
+                CSS Selectors
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="html-tutorial/Text">
+          <NavItem eventKey="css-tutorial/MeasureColors">
             <NavText>
-              <NavLink to="../../../pages/html_tutorials/HtmlText" style={linkText}>
-                HTML Text
+              <NavLink
+                to="../../../pages/css_tutorials/quarter_01/CssMeasureColors"
+                style={linkText}
+              >
+                css Measure & Colors
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="html-tutorial/Lists">
+          <NavItem eventKey="css-tutorial/Text">
             <NavText>
-              <NavLink to="../../../pages/html_tutorials/HtmlLists" style={linkText}>
-                HTML Lists
+              <NavLink
+                to="../../../pages/css_tutorials/quarter_01/CssText"
+                style={linkText}
+              >
+                CSS Text
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="html-tutorial/Images">
+          <NavItem eventKey="css-tutorial/Links">
             <NavText>
-              <NavLink to="../../../pages/html_tutorials/HtmlImages" style={linkText}>
-                HTML Images
+              <NavLink
+                to="../../../pages/css_tutorials/quarter_01/CssLinks"
+                style={linkText}
+              >
+                CSS Links
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="html-tutorial/Tables">
+          <NavItem eventKey="css-tutorial/Lists">
             <NavText>
-              <NavLink to="../../../pages/html_tutorials/HtmlTables" style={linkText}>
-                HTML Tables
+              <NavLink
+                to="../../../pages/css_tutorials/quarter_01/CssLists"
+                style={linkText}
+              >
+                CSS Lists
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="html-tutorial/Links">
+          <NavItem eventKey="css-tutorial/Tables">
             <NavText>
-              <NavLink to="../../../pages/html_tutorials/HtmlLinks" style={linkText}>
-                HTML Links
+              <NavLink
+                to="../../../pages/css_tutorials/quarter_01/CssTables"
+                style={linkText}
+              >
+                CSS Tables
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="html-tutorial/Forms">
+          <NavItem eventKey="css-tutorial/PositioningVisual">
             <NavText>
-              <NavLink to="../../../pages/html_tutorials/HtmlForms" style={linkText}>
-                HTML Forms
+              <NavLink
+                to="../../../pages/css_tutorials/quarter_01/CssPositioningVisual"
+                style={linkText}
+              >
+                CSS Positioning & Visuals
+              </NavLink>
+            </NavText>
+          </NavItem>
+          <NavItem eventKey="css-tutorial/Forms">
+            <NavText>
+              <NavLink
+                to="../../../pages/css_tutorials/quarter_01/CssForms"
+                style={linkText}
+              >
+                CSS Forms
+              </NavLink>
+            </NavText>
+          </NavItem>
+          <NavItem eventKey="css-tutorial/Layout">
+            <NavText>
+              <NavLink
+                to="../../../pages/css_tutorials/quarter_01/CssLayout"
+                style={linkText}
+              >
+                CSS Layout
               </NavLink>
             </NavText>
           </NavItem>
