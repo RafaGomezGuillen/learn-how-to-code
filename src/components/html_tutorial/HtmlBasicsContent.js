@@ -32,7 +32,7 @@ function HtmlBasicsContent() {
           </a>
           .
         </p>
-        <p>In this page we are going to see how to create a HTML document.</p>
+        <p>In this page we are going to see how to create an HTML file.</p>
       </div>
       <hr></hr>
       <div className="content-code">
@@ -47,27 +47,27 @@ function HtmlBasicsContent() {
       </div>
       <hr></hr>
       <div className="content-code">
-        <h2>STEP 2: Create the HTML document </h2>
+        <h2>STEP 2: Create the HTML file </h2>
         <p>
-          To create a HTML document press ctrl + n (New Text File), or go to
+          To create a HTML file press ctrl + n (New Text File), or go to
           File section on VS Code an click New Text File.
         </p>
       </div>
       <hr></hr>
       <div className="content-code">
-        <h2>STEP 3: Save the HTML document </h2>
+        <h2>STEP 3: Save the HTML file </h2>
         <p>
-          To save the HTML document press ctrl + shift + s (Save As...), or go
+          To save the HTML file press ctrl + shift + s (Save As...), or go
           to File section on VS Code an click Save As.
           <br></br>
           <br></br>
-          Introduce the name of the document terminated by .html (extension).
+          Introduce the name of the file terminated by .html (extension).
         </p>
       </div>
       <hr></hr>
       <div className="content-code">
         <h2>STEP 4: Write Some Html</h2>
-        <p>Write or copy the following HTML code into the document created.</p>
+        <p>Write or copy the following HTML code into the file created.</p>
         <CodeContainer
           title={"HTML"}
           code={
@@ -79,17 +79,17 @@ function HtmlBasicsContent() {
       </div>
       <hr></hr>
       <div className="content-code">
-        <h2>STEP 5: Save the HTML document and open it</h2>
+        <h2>STEP 5: Save the HTML file and open it</h2>
         <p>
-          To save the HTML document press ctrl + s (Save...), or go to File
+          To save the HTML file press ctrl + s (Save...), or go to File
           section on VS Code an click Save.
           <br></br>
           <br></br>
           You can press the option Auto Save wich auto saves the changes you
-          have done in the document automatically for you.
+          have done in the file automatically for you.
           <br></br>
           <br></br>
-          To see the changes open the File Explorer and the document, you will
+          To see the changes open the File Explorer and the file, you will
           see it in your default browser.
         </p>
       </div>
