@@ -8,8 +8,16 @@ function CssMeasureColorsContent() {
       <h1>CSS MEASURE & COLORS</h1>
       <div className="introduction">
         <p>
-          In this page we are going to see all 8 HTML documents of the fist
-          quarter.
+          Many of the CSS properties that you will see in the next chapters
+          allow you to indicate sizes and colors in their values. Furthermore,
+          CSS is so flexible that it allows you to indicate measurements and
+          colors in many different ways.
+        </p>
+        <p>
+          For this reason, all the alternatives available in CSS to indicate the
+          measurements and colors are presented below. In the following
+          chapters, when a property can take a measurement or a color as its
+          value, all these alternatives will not be explained again.
         </p>
       </div>
       <hr></hr>
@@ -21,19 +29,17 @@ function CssMeasureColorsContent() {
         </p>
         <CodeContainer
           title={"HTML"}
-          code={
-            "aaaaaaa\naaaaaaaaa\naaaaaaaaaaa"
-          }
+          code={"aaaaaaa\naaaaaaaaa\naaaaaaaaaaa"}
           containerHeight={"200px"}
           insideHeight={"40%"}
         />
-      <hr></hr>
-      <Redirection
-        link1={"../../../pages/Home"}
-        link2={"../../../pages/html_tutorials/HtmlHome"}
-        name1={"Home"}
-        name2={"HTML Home"}
-      />
+        <hr></hr>
+        <Redirection
+          link1={"../../../pages/Home"}
+          link2={"../../../pages/html_tutorials/HtmlHome"}
+          name1={"Home"}
+          name2={"HTML Home"}
+        />
       </div>
     </div>
   );

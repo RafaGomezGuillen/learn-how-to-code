@@ -200,7 +200,10 @@ function CssSelectorsContent() {
           period (.) as a prefix to the CSS rule name.
           <br></br>
           <br></br>
-          The value of the id attribute must be unique, so two different elements cannot have the same id value. However, the class attribute is not required to be unique, so many elements. Different HTML can share the same value for their class attribute.
+          The value of the id attribute must be unique, so two different
+          elements cannot have the same id value. However, the class attribute
+          is not required to be unique, so many elements. Different HTML can
+          share the same value for their class attribute.
         </p>
         <CodeContainer
           title={"CSS"}
@@ -220,16 +223,156 @@ function CssSelectorsContent() {
         <div className="examples">
           <p style={{ color: "red" }}>Lorem ipsum dolor sit amet...</p>
           <p>Nunc sed lacus et est adipiscing accumsan...</p>
+          <p>Class aptent taciti sociosqu ad litora...</p>
+        </div>
+        <hr></hr>
+        <h2>Child selector</h2>
+        <p>
+          This is a selector similar to the descending selector, but very
+          different in its operation. It is used to select an element that is a
+          direct child of another element and is indicated by the "greater than
+          sign" (&gt;).
+          <br></br>
+          <br></br>
+          In the next example, the selector p &gt; span is interpreted as "any
+          &lt;span&gt; element that is a direct child of a &lt;p&gt; element",
+          so the first &lt;span&gt; element satisfies the condition of the
+          selector. However, the second &lt;span&gt; element does not comply
+          because it is a descendant but not a direct child of a &lt;p&gt;
+          element.
+        </p>
+        <CodeContainer
+          title={"HTML + CSS"}
+          code={
+            'p > a {\n  color: red;\n}\n\n<p><a href="#">Link 1</a></p>\n<p><span><a href="#">Link 2</a></span></p>'
+          }
+          containerHeight={"260px"}
+          insideHeight={"59%"}
+        />
+        <div className="examples">
           <p>
-            Class aptent taciti sociosqu ad litora...
+            <a href="#" style={{ color: "red" }}>
+              Link 1
+            </a>
+          </p>
+          <p>
+            <span>
+              <a href="#">Link 2</a>
+            </span>
           </p>
         </div>
         <hr></hr>
+        <h2>Adjacent selector</h2>
+        <p>
+          The styles of the h1 + h2 selector are applied to the first &lt;h2&gt;
+          element of the page, but not to the second &lt;h2&gt;, because:
+          <br></br>
+          <br></br>
+          <ul>
+            <li>
+              The parent element of &lt;h1&gt; is &lt;body&gt;, the same parent
+              as both &lt;h2&gt; elements. This, two &lt;h2&gt; elements satisfy
+              the first condition of the adjacent selector.
+            </li>
+            <li>
+              The first &lt;h2&gt; element appears in the HTML right after the
+              &lt;h1&gt; element, so this &lt;h2&gt; element also satisfies the
+              second condition of the adjacent selector.
+            </li>
+            <li>
+              Conversely, the second &lt;h2&gt; element does not appear
+              immediately after the &lt;h1&gt; element, so it does not satisfy
+              the second condition of the adjacent selector and therefore the h1
+              + h2 styles are not applied to it.
+            </li>
+          </ul>
+        </p>
+        <CodeContainer
+          title={"HTML + CSS"}
+          code={
+            "h1 + h2 {\n  color: red; \n}\n\n<h1>Title</h1>\n<h2>Subtitle</h2>\n<h2>Another subtitle</h2>"
+          }
+          containerHeight={"290px"}
+          insideHeight={"59%"}
+        />
+        <div className="examples">
+          <h1>Title</h1>
+          <h2 style={{ color: "red" }}>Subtitle</h2>
+          <h2>Another subtitle</h2>
+        </div>
+        <hr></hr>
+        <h2>Attribute selector</h2>
+        <p>
+          The last type of advanced selectors are attribute selectors, which
+          allow you to select HTML elements based on their attributes and/or
+          values ​​of those attributes.
+        </p>
+        <CodeContainer
+          title={"CSS"}
+          code={
+            '/* All links that have a "class" attribute are shown in blue, regardless of its value */\na[class] {\n color: blue;\n}\n\n/* All links that have a "class" attribute with the value "external" are shown in blue */\na[class="external"] {\n color: blue;\n}\n\n/* All links pointing to the site "http://www.example.com" are shown in blue */\na[href="http://www.example.com"] {\n color: blue;\n}\n\n/* All links that have a "class" attribute in which at least one of its values ​​is "external" are shown in blue */\na[class~="external"] {\n color: blue;\n}\n\n/* Select all page elements whose "lang" attribute is equal to "en", that is, all elements in English */\n*[lang=en] {\n ...\n}\n\n/* Selects all page elements whose "lang" attribute starts with "es", that is, "es", "es-ES", "es-AR", etc. */\n*[lang|="en"] {\n color : red;\n}'
+          }
+          containerHeight={"740px"}
+          insideHeight={"85%"}
+        />
+        <hr></hr>
+        <h2>Style colition</h2>
+        <p>
+          In complex style sheets, it is common for multiple CSS rules to be
+          applied to the same HTML element. The problem with these multiple
+          rules is that collisions can occur like the one in the following
+          example:
+        </p>
+        <CodeContainer
+          title={"HTML + CSS"}
+          code={"p { color: red; }\np { color: blue; }\n\n<p>Example</p>"}
+          containerHeight={"220px"}
+          insideHeight={"50%"}
+        />
+        <div className="examples">
+          <h1 style={{ color: "blue" }}>Title</h1>
+        </div>
+        <p>
+          The method followed by CSS to resolve style collisions is shown below:
+          <br></br>
+          <br></br>
+          <ol>
+            <li>
+              Determine all declarations that apply to the element for the
+              selected CSS medium.
+            </li>
+            <li>
+              Sort declarations based on their origin (browser, user, or
+              designer CSS) and their priority (!important keyword).
+            </li>
+            <li>
+              Sort the declarations according to how specific the selector is.
+              The more generic a selector is, the less important its
+              declarations are.
+            </li>
+            <li>
+              If after applying the previous rules there are two or more rules
+              with the same priority, the one indicated last is applied.
+            </li>
+          </ol>
+        </p>
+        <CodeContainer
+          title={"HTML + CSS"}
+          code={
+            'p { color: red; }\n\np#my-id { color: blue; }\n\n* { color: green; }\n\n<p id="my-id">Example</p>'
+          }
+          containerHeight={"270px"}
+          insideHeight={"60%"}
+        />
+        <div className="examples">
+          <p style={{color: "green"}}>Example</p>
+        </div>
+        <hr></hr>
         <Redirection
-          link1={"../../../pages/Home"}
-          link2={"../../../pages/html_tutorials/HtmlHome"}
-          name1={"Home"}
-          name2={"HTML Home"}
+          link1={"../../../pages/css_tutorials/quarter_01/CssBasics"}
+          link2={"../../../pages/css_tutorials/quarter_01/CssMeasureColors"}
+          name1={"CSS Basics"}
+          name2={"CSS Measure & Colors"}
         />
       </div>
     </div>
