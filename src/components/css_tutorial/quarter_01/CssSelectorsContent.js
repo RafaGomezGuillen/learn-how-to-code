@@ -28,6 +28,72 @@ function CssSelectorsContent() {
       </div>
       <hr></hr>
       <div className="content-code">
+        <table>
+          <tr>
+            <td>
+              <a href="#universal" className="links">
+                Universal selector
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#tag" className="links">
+                Tag selector
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#descendant" className="links">
+                Descendant selector
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#class" className="links">
+                Class selector
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#id" className="links">
+                ID selector
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#child" className="links">
+                Child selector
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#adjacent" className="links">
+                Adjacent selector
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#attribute" className="links">
+                Attribute selector
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#style" className="links">
+                Style colition
+              </a>
+            </td>
+          </tr>
+        </table>
+        <hr></hr>
         <h2 id="universal">Universal selector</h2>
         <p>
           It is used to select all the elements of the page. The following
@@ -144,7 +210,7 @@ function CssSelectorsContent() {
           </p>
         </div>
         <hr></hr>
-        <h2>Class selector</h2>
+        <h2 id="class">Class selector</h2>
         <p>
           To apply styles to a single element of the page, it consists of using
           the HTML class attribute on that element to directly indicate the CSS
@@ -187,7 +253,7 @@ function CssSelectorsContent() {
           insideHeight={"73%"}
         />
         <hr></hr>
-        <h2>ID selectors</h2>
+        <h2 id="id">ID selectors</h2>
         <p>
           The ID selector allows you to select a page element through the value
           of its id attribute. This type of selectors only select one element of
@@ -226,7 +292,7 @@ function CssSelectorsContent() {
           <p>Class aptent taciti sociosqu ad litora...</p>
         </div>
         <hr></hr>
-        <h2>Child selector</h2>
+        <h2 id="child">Child selector</h2>
         <p>
           This is a selector similar to the descending selector, but very
           different in its operation. It is used to select an element that is a
@@ -262,7 +328,7 @@ function CssSelectorsContent() {
           </p>
         </div>
         <hr></hr>
-        <h2>Adjacent selector</h2>
+        <h2 id="adjacent">Adjacent selector</h2>
         <p>
           The styles of the h1 + h2 selector are applied to the first &lt;h2&gt;
           element of the page, but not to the second &lt;h2&gt;, because:
@@ -301,7 +367,7 @@ function CssSelectorsContent() {
           <h2>Another subtitle</h2>
         </div>
         <hr></hr>
-        <h2>Attribute selector</h2>
+        <h2 id="attribute">Attribute selector</h2>
         <p>
           The last type of advanced selectors are attribute selectors, which
           allow you to select HTML elements based on their attributes and/or
@@ -316,7 +382,7 @@ function CssSelectorsContent() {
           insideHeight={"85%"}
         />
         <hr></hr>
-        <h2>Style colition</h2>
+        <h2 id="style">Style colition</h2>
         <p>
           In complex style sheets, it is common for multiple CSS rules to be
           applied to the same HTML element. The problem with these multiple
@@ -365,7 +431,7 @@ function CssSelectorsContent() {
           insideHeight={"60%"}
         />
         <div className="examples">
-          <p style={{color: "green"}}>Example</p>
+          <p style={{ color: "green" }}>Example</p>
         </div>
         <hr></hr>
         <Redirection
