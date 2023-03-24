@@ -122,11 +122,114 @@ function CssMeasureColorsContent() {
           insideHeight={"55%"}
         />
         <hr></hr>
+        <h2>Percentages</h2>
+        <p>
+          CSS defines another relative unit of measurement based on percentages.
+          A percentage is made up of a numerical value followed by the % symbol
+          and is always referenced to another measure.
+          <br></br>
+          <br></br>
+          In the following example, the reference of the value 80% is the width
+          of its parent element. Therefore, the &lt;div&gt; element whose class
+          attribute is equal to main has a width of 80% x 600px = 480px.
+        </p>
+        <CodeContainer
+          title={"HTML + CSS"}
+          code={
+            'div#content {\n  width: 600px;\n  border: solid red;\n}\n\ndiv.principal {\n  width: 80%;\n  border: solid blue;\n}\n\n<div id="content">\n  <div class="principal">\n    <p>Hello world</p>\n  </div>\n</div>'
+          }
+          containerHeight={"450px"}
+          insideHeight={"75%"}
+        />
+        <div className="examples">
+          <div id="content" style={{ width: "200px", border: "solid red" }}>
+            <div
+              class="principal"
+              style={{ width: "80%", border: "solid blue" }}
+            >
+              <p>Hello world</p>
+            </div>
+          </div>
+        </div>
+        <hr></hr>
+        <h2>Recommendations</h2>
+        <p>
+          In general, using relative units is recommended whenever possible, as
+          it improves page accessibility and allows documents to easily adapt to
+          any medium and device.
+          <br></br>
+          <br></br>
+          The document{" "}
+          <a href="http://www.w3.org/TR/WCAG10-CSS-TECHS/" className="links">
+            "Recommendations on CSS techniques to improve the accessibility of
+            HTML content"
+          </a>{" "}
+          prepared by the W3C organization, recommends the use of the unit "em"
+          to indicate the size of the text and for all possible measurements.
+          <br></br>
+          <br></br>
+          Normally, pixels and percentages are used to define the layout of the
+          document (basically, the width of the columns and elements of the
+          pages) and em and percentages for the font size of the texts.
+          <br></br>
+          <br></br>
+          On the other hand, one of the common problems when using relative
+          units is the "text is getting smaller" or "text is getting bigger"
+          problem. The following example shows the first case:
+        </p>
+        <CodeContainer
+          title={"HTML + CSS"}
+          code={
+            "div {\n  font-size: 0.9em;\n  border: dotted grey; \n}\n\n<div>\n  <p>Text 1</p>\n  <div>\n    <p>Text 2</p>\n    <div>\n      <p>Text 3</p>\n    </div>\n  </div>\n</div>"
+          }
+          containerHeight={"420px"}
+          insideHeight={"75%"}
+        />
+        <div className="examples">
+          <div style={{ fontSize: "0.9em", border: "dotted grey" }}>
+            <p>Text 1</p>
+            <div style={{ fontSize: "0.9em", border: "dotted grey" }}>
+              <p>Text 2</p>
+              <div style={{ fontSize: "0.9em", border: "dotted grey" }}>
+                <p>Text 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr></hr>
+        <h2>Colors</h2>
+        <p>
+          Colors in CSS can be specified in five different ways: keywords,
+          system colors, hex RGB, numeric RGB, and percentage RGB. Although the
+          most common method is hexadecimal RGB, below are all the alternatives
+          that CSS offers.
+          <br></br>
+          <br></br>
+          CSS defines 17 keywords to refer to the basic colors. The words
+          correspond to the English name of each color:
+          <br></br>
+          <br></br>
+          <ul>
+            <li>
+              aqua, black, blue, fuchsia, gray, green, lime, maroon, navy,
+              olive, orange, purple, red, silver, teal, white, yellow.
+            </li>
+          </ul>
+        </p>
+        <CodeContainer
+          title={"CSS"}
+          code={
+            "/* Decimal RGB */\np { color: rgb(71, 98, 176); }\n\n/* Percentage RGB */\np { color: rgb(27%, 38%, 69%); }\n\n/* Hexadecimal RGB */\np { color: #4762B0; }"
+          }
+          containerHeight={"300px"}
+          insideHeight={"65%"}
+        />
+        <hr></hr>
         <Redirection
-          link1={"../../../pages/Home"}
-          link2={"../../../pages/html_tutorials/HtmlHome"}
-          name1={"Home"}
-          name2={"HTML Home"}
+          link1={"../../../pages/css_tutorials/quarter_01/CssSelectors"}
+          link2={"../../../pages/css_tutorials/quarter_01/CssText"}
+          name1={"Selectors"}
+          name2={"Text"}
         />
       </div>
     </div>

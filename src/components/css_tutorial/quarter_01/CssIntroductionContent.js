@@ -211,7 +211,7 @@ function CssIntroductionContent() {
           link1={"../../../pages/Home"}
           link2={"../../../pages/css_tutorials/quarter_01/CssBasics"}
           name1={"Home"}
-          name2={"CSS Basics"}
+          name2={"Basics"}
         />
       </div>
     </div>

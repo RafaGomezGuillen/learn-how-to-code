@@ -88,8 +88,8 @@ function CssBasicsContent() {
         <Redirection
           link1={"../../../pages/css_tutorials/quarter_01/CssIntroduction"}
           link2={"../../../pages/css_tutorials/quarter_01/CssSelectors"}
-          name1={"CSS Introduction"}
-          name2={"CSS Selectors"}
+          name1={"Introduction"}
+          name2={"Selectors"}
         />
       </div>
     </div>

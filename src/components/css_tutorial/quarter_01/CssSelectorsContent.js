@@ -437,8 +437,8 @@ function CssSelectorsContent() {
         <Redirection
           link1={"../../../pages/css_tutorials/quarter_01/CssBasics"}
           link2={"../../../pages/css_tutorials/quarter_01/CssMeasureColors"}
-          name1={"CSS Basics"}
-          name2={"CSS Measure & Colors"}
+          name1={"Basics"}
+          name2={"Measure, Colors"}
         />
       </div>
     </div>
