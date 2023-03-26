@@ -1,7 +1,6 @@
 import React from "react";
 import CodeContainer from "../../code_container/CodeContainer";
 import Redirection from "../../redirection/Redirection";
-import HtmlBasic from "../../../pages/html_tutorials/HtmlBasics";
 
 function CssBasicsContent() {
   return (

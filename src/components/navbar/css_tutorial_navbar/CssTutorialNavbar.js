@@ -91,6 +91,16 @@ function CssTutorialNavbar() {
               </NavLink>
             </NavText>
           </NavItem>
+          <NavItem eventKey="css-tutorial/BoxModel">
+            <NavText>
+              <NavLink
+                to="../../../pages/css_tutorials/quarter_01/CssBoxModel"
+                style={linkText}
+              >
+                CSS Box model
+              </NavLink>
+            </NavText>
+          </NavItem>
           <NavItem eventKey="css-tutorial/Text">
             <NavText>
               <NavLink

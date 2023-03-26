@@ -1,6 +1,7 @@
 import React from "react";
 import CodeContainer from "../../code_container/CodeContainer";
 import Redirection from "../../redirection/Redirection";
+import "./css/CssTutorialStyles.css"
 
 function CssTextContent() {
   return (
@@ -88,50 +89,22 @@ function CssTextContent() {
           </tr>
           <tr>
             <td>
-              <a href="#text-decoration" className="links">
-                Text-decoration
+              <a href="#letter-word-spacing" className="links">
+                Letter and word spacing
               </a>
             </td>
           </tr>
           <tr>
             <td>
-              <a href="#text-transform" className="links">
-                Text-transform
+              <a href="#white-space" className="links">
+                White-space
               </a>
             </td>
           </tr>
           <tr>
             <td>
-              <a href="#text-decoration" className="links">
-                Text-decoration
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="#text-decoration" className="links">
-                Text-decoration
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="#text-decoration" className="links">
-                Text-decoration
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="#text-decoration" className="links">
-                Text-decoration
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="#text-decoration" className="links">
-                Text-decoration
+              <a href="#pseudo" className="links">
+                :first-line & :first-letter
               </a>
             </td>
           </tr>
@@ -469,8 +442,227 @@ function CssTextContent() {
         <hr></hr>
         <h2 id="text-transform">Text-transform</h2>
         <p>
-          
+          One of the lesser-known CSS properties that can be very useful in some
+          circumstances is the text-transform property, which can substantially
+          change the appearance of the text.
+          <br></br>
+          <br></br>
+          The text-transform property allows you to display the original text
+          transformed into text in full <strong>uppercase</strong>, in
+          <strong> lowercase</strong> or with the first letter of each word in
+          uppercase
+          <strong> (capitalize)</strong>.
         </p>
+        <CodeContainer
+          title={"CSS"}
+          code={
+            "p { text-transform: capitalize; }\n\np { text-transform: lowercase; }\n\np { text-transform: uppercase; }"
+          }
+          containerHeight={"240px"}
+          insideHeight={"55%"}
+        />
+        <div className="examples">
+          <p style={{ border: "solid black" }}>
+            Original: Duis elit ex ut pariatur fugiat nostrud non nostrud
+            ullamco elit ullamco fugiat nulla commodo. Qui amet dolore enim sint
+            anim occaecat excepteur voluptate. Ea eu Lorem cupidatat quis ex
+            commodo anim do amet sit nisi. Amet laboris esse ullamco minim
+            mollit eiusmod.
+          </p>
+          <p style={{ textTransform: "capitalize", border: "solid black" }}>
+            Capitalize: Duis elit ex ut pariatur fugiat nostrud non nostrud
+            ullamco elit ullamco fugiat nulla commodo. Qui amet dolore enim sint
+            anim occaecat excepteur voluptate. Ea eu Lorem cupidatat quis ex
+            commodo anim do amet sit nisi. Amet laboris esse ullamco minim
+            mollit eiusmod.
+          </p>
+          <p style={{ textTransform: "lowercase", border: "solid black" }}>
+            Lowercase: Duis elit ex ut pariatur fugiat nostrud non nostrud
+            ullamco elit ullamco fugiat nulla commodo. Qui amet dolore enim sint
+            anim occaecat excepteur voluptate. Ea eu Lorem cupidatat quis ex
+            commodo anim do amet sit nisi. Amet laboris esse ullamco minim
+            mollit eiusmod.
+          </p>
+          <p style={{ textTransform: "uppercase", border: "solid black" }}>
+            Uppercase: Duis elit ex ut pariatur fugiat nostrud non nostrud
+            ullamco elit ullamco fugiat nulla commodo. Qui amet dolore enim sint
+            anim occaecat excepteur voluptate. Ea eu Lorem cupidatat quis ex
+            commodo anim do amet sit nisi. Amet laboris esse ullamco minim
+            mollit eiusmod.
+          </p>
+        </div>
+        <hr></hr>
+        <h2 id="text-incident">Text-incident</h2>
+        <p>
+          In many print publications, it is customary to tabulate the first line
+          of each paragraph to make it easier to read. CSS allows you to control
+          this tab through the text-indent property.
+        </p>
+        <CodeContainer
+          title={"CSS"}
+          code={"p { text-incident: 0em; }\n\np { text-transform: 2em; }"}
+          containerHeight={"200px"}
+          insideHeight={"45%"}
+        />
+        <div className="examples">
+          <p style={{ textIndent: "0em", border: "solid black" }}>
+            0 em: Duis elit ex ut pariatur fugiat nostrud non nostrud ullamco
+            elit ullamco fugiat nulla commodo. Qui amet dolore enim sint anim
+            occaecat excepteur voluptate. Ea eu Lorem cupidatat quis ex commodo
+            anim do amet sit nisi. Amet laboris esse ullamco minim mollit
+            eiusmod.
+          </p>
+          <p style={{ textIndent: "2em", border: "solid black" }}>
+            2em: Duis elit ex ut pariatur fugiat nostrud non nostrud ullamco
+            elit ullamco fugiat nulla commodo. Qui amet dolore enim sint anim
+            occaecat excepteur voluptate. Ea eu Lorem cupidatat quis ex commodo
+            anim do amet sit nisi. Amet laboris esse ullamco minim mollit
+            eiusmod.
+          </p>
+          <p style={{ textIndent: "4em", border: "solid black" }}>
+            4em: Duis elit ex ut pariatur fugiat nostrud non nostrud ullamco
+            elit ullamco fugiat nulla commodo. Qui amet dolore enim sint anim
+            occaecat excepteur voluptate. Ea eu Lorem cupidatat quis ex commodo
+            anim do amet sit nisi. Amet laboris esse ullamco minim mollit
+            eiusmod.
+          </p>
+        </div>
+        <hr></hr>
+        <h2 id="letter-word-spacing">Letter and word spacing</h2>
+        <p>
+          CSS also allows you to control the spacing between the letters that
+          make up the words and the spacing between the words that make up the
+          texts. The property that controls the spacing between letters is
+          called letter-spacing and the spacing between words is controlled by
+          word-spacing.
+        </p>
+        <CodeContainer
+          title={"CSS"}
+          code={"p {\n  letter-spacing: 4em;\n  word-spacing: 3em; \n}"}
+          containerHeight={"220px"}
+          insideHeight={"48%"}
+        />
+        <div className="examples">
+          <p style={{ border: "solid black" }}>
+            Original: Laboris dolor et voluptate Lorem voluptate tempor
+            consectetur.
+          </p>
+          <p
+            style={{
+              border: "solid black",
+              letterSpacing: "1em",
+              wordSpacing: "1em",
+            }}
+          >
+            Laboris dolor et voluptate Lorem voluptate tempor.
+          </p>
+        </div>
+        <hr></hr>
+        <h2 id="white-space">White-space</h2>
+        <p>
+          CSS also allows you to control the treatment of whitespace in text
+          using the white-space property.
+          <br></br>
+          <br></br>
+          <ul>
+            <li>
+              <strong>pre</strong>: Whitespace and newlines are respected
+              (exactly the same as the &lt;pre&gt; tag). If the line is too
+              long, it goes out of the space allocated for that content.
+            </li>
+            <li>
+              <strong>nowrap</strong>: Removes whitespace and new lines. If the
+              line is too long, it goes out of the space allocated for that
+              content
+            </li>
+            <li>
+              <strong>pre-wrap</strong>: Whitespace and new lines are respected,
+              but wrapping each line to the space allotted for that content
+            </li>
+            <li>
+              <strong>pre-line</strong>: Removes whitespace and honors newlines,
+              but wrapping each line to the space allotted for that content.
+            </li>
+          </ul>
+        </p>
+        <CodeContainer
+          title={"CSS"}
+          code={
+            "p { white-space: pre; }\n\np { white-space: nowrap; }\n\np { white-space: pre-wrap; }\n\np { white-space: pre-line; }"
+          }
+          containerHeight={"280px"}
+          insideHeight={"60%"}
+        />
+        <div className="examples">
+          <p
+            style={{ border: "solid black", width: "100px", whiteSpace: "pre" }}
+          >
+            Pre: Magna commodo dolore cillum.
+          </p>
+          <p
+            style={{
+              border: "solid black",
+              width: "100px",
+              whiteSpace: "pre-wrap",
+            }}
+          >
+            Pre-wrap: Magna commodo dolore cillum.
+          </p>
+          <p
+            style={{
+              border: "solid black",
+              width: "100px",
+              whiteSpace: "nowrap",
+            }}
+          >
+            Nowrap: Magna commodo dolore.
+          </p>
+          <p
+            style={{
+              border: "solid black",
+              width: "100px",
+              whiteSpace: "pre-line",
+            }}
+          >
+            Pre-line: Magna commodo dolore Est nulla veniam nulla cupidatat ut
+            dolor proident mollit cillum nostrud..
+          </p>
+        </div>
+        <hr></hr>
+        <h2 id="pseudo">:first-line & :first-letter</h2>
+        <p>
+          The :first-line pseudo-element allows you to apply styles to the first
+          line of text. The words that form the first line of a text depend on
+          the space reserved to display the text or the size of the browser
+          window, so CSS automatically calculates the words that form the first
+          line of text in each moment.
+          <br></br>
+          <br></br>
+          On the other hand, the :first-letter pseudo-element allows you to
+          create a capital letter on the first line.
+        </p>
+        <CodeContainer
+          title={"CSS"}
+          code={
+            "p:first-line { text-transform: uppercase; }\n\np:first-letter { font-size: 2em; }"
+          }
+          containerHeight={"190px"}
+          insideHeight={"45%"}
+        />
+        <div className="examples">
+          <p style={{ border: "solid black" }} className="examples-pseudo-1">
+            Sint dolore qui nulla occaecat eu. Eu mollit elit nisi irure.
+            Voluptate in commodo sit excepteur. Aliqua aliqua amet occaecat sit
+            occaecat. Aliquip nulla nostrud eu aliquip quis irure reprehenderit
+            consequat commodo. Deserunt ea enim enim Lorem.
+          </p>
+          <p style={{ border: "solid black" }} className="examples-pseudo-2">
+            Sint dolore qui nulla occaecat eu. Eu mollit elit nisi irure.
+            Voluptate in commodo sit excepteur. Aliqua aliqua amet occaecat sit
+            occaecat. Aliquip nulla nostrud eu aliquip quis irure reprehenderit
+            consequat commodo. Deserunt ea enim enim Lorem.
+          </p>
+        </div>
         <hr></hr>
         <Redirection
           link1={"../../../pages/css_tutorials/quarter_01/CssMeasureColors"}

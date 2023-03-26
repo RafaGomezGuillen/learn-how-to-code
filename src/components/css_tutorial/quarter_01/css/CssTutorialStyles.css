@@ -1,0 +1,52 @@
+.examples-pseudo-1::first-line {
+  text-transform: uppercase;
+}
+
+.examples-pseudo-2::first-letter {
+  font-size: 2em;
+}
+
+.pseudo-a-1:link {
+  color: red;
+}
+
+.pseudo-a-2:visited {
+  color: green;
+}
+
+.pseudo-a-3:hover {
+  color: grey;
+}
+
+.pseudo-a-4:active {
+  color: coral;
+}
+
+.ul-style-image {
+  list-style-image: url(../images/color_rosa.png);
+}
+
+.ul-menu-example {
+  clear: both;
+  float: left;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid #7c7c7c;
+}
+
+#collapse-example {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+#collapse-example tr, #collapse-example td,
+#separate-example tr, #separate-example td {
+  border: 1px solid #000;
+}
+
+#separate-example {
+  border: 1px solid #000;
+  border-collapse: separate;
+}

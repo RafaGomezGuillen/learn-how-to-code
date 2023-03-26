@@ -77,7 +77,7 @@ function HomeNavbar() {
           <NavText style={linkText}>CSS</NavText>
           <NavItem eventKey="css/Tutorial">
             <NavText>
-              <NavLink to="../../../pages/Home" style={linkText}>
+              <NavLink to="/pages/css_tutorials/quarter_01/CssIntroduction" style={linkText}>
                 CSS Tutorial
               </NavLink>
             </NavText>

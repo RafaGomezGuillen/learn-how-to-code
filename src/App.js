@@ -13,8 +13,6 @@ import HtmlExercises from "./pages/html_exercises/HtmlExercises";
 import CssIntroduction from "./pages/css_tutorials/quarter_01/CssIntroduction";
 import CssBasics from "./pages/css_tutorials/quarter_01/CssBasics";
 import CssBoxModel from "./pages/css_tutorials/quarter_01/CssBoxModel";
-import CssForms from "./pages/css_tutorials/quarter_01/CssForms";
-import CssLayout from "./pages/css_tutorials/quarter_01/CssLayout";
 import CssLinks from "./pages/css_tutorials/quarter_01/CssLinks";
 import CssLists from "./pages/css_tutorials/quarter_01/CssLists";
 import CssMeasureColors from "./pages/css_tutorials/quarter_01/CssMeasureColors";
@@ -45,8 +43,6 @@ function App() {
         <Route exact path="/pages/css_tutorials/quarter_01/CssIntroduction" element={<CssIntroduction />} />
         <Route exact path="/pages/css_tutorials/quarter_01/CssBasics" element={<CssBasics />} />
         <Route exact path="/pages/css_tutorials/quarter_01/CssBoxModel" element={<CssBoxModel />} />
-        <Route exact path="/pages/css_tutorials/quarter_01/CssForms" element={<CssForms />} />
-        <Route exact path="/pages/css_tutorials/quarter_01/CssLayout" element={<CssLayout />} />
         <Route exact path="/pages/css_tutorials/quarter_01/CssLinks" element={<CssLinks />} />
         <Route exact path="/pages/css_tutorials/quarter_01/CssLists" element={<CssLists />} />
         <Route exact path="/pages/css_tutorials/quarter_01/CssMeasureColors" element={<CssMeasureColors />} />
