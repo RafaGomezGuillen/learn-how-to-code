@@ -1,12 +1,13 @@
 import React from "react";
 import SideNav, { NavItem, NavIcon, NavText } from "@trendmicro/react-sidenav";
 import "@trendmicro/react-sidenav/dist/react-sidenav.css";
-import { FaCss3Alt, FaHome } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
+import { SiMicrosoftsqlserver } from "react-icons/si";
 import { NavLink } from "react-router-dom";
 import DarkMode from "../../dark_mode/DarkMode";
 import Searcher from "../../searcher/Searcher";
 
-function CssTutorialNavbar() {
+function SqlTutorialNavbar() {
   const iconStyle = {
     width: "35px",
     height: "35px",
@@ -46,128 +47,88 @@ function CssTutorialNavbar() {
           </NavIcon>
           <NavText style={linkText}>&nbsp;&nbsp;Searcher</NavText>
         </NavItem>
-        <NavItem eventKey="css-tutorial">
+        <NavItem eventKey="sql-tutorial">
           <NavIcon>
-            <FaCss3Alt style={iconStyle} />
+            <SiMicrosoftsqlserver style={iconStyle} />
           </NavIcon>
-          <NavText style={linkText}>CSS Tutorial.</NavText>
-          <NavItem eventKey="css-tutorial/Introduction">
+          <NavText style={linkText}>SQL Tutorial</NavText>
+          <NavItem eventKey="sql-tutorial/SqlIntroduction">
             <NavText>
               <NavLink
-                to="../../../pages/css_tutorials/quarter_01/CssIntroduction"
+                to="../../../pages/sql_tutorials/SqlIntroduction"
                 style={linkText}
               >
-                CSS Introduction
+                SQL Introduction
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="css-tutorial/Basics">
+          <NavItem eventKey="sql-tutorial/SqlBasics">
             <NavText>
               <NavLink
-                to="../../../pages/css_tutorials/quarter_01/CssBasics"
+                to="../../../pages/sql_tutorials/SqlBasics"
                 style={linkText}
               >
-                CSS Basics
+                SQL Basics
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="css-tutorial/Selectors">
+          <NavItem eventKey="sql-tutorial/SqlBasicQueries01">
             <NavText>
               <NavLink
-                to="../../../pages/css_tutorials/quarter_01/CssSelectors"
+                to="../../../pages/sql_tutorials/SqlBasicQueries01"
                 style={linkText}
               >
-                CSS Selectors
+                SQL Basics Queries 1
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="css-tutorial/MeasureColors">
+          <NavItem eventKey="sql-tutorial/SqlBasicQueries02">
             <NavText>
               <NavLink
-                to="../../../pages/css_tutorials/quarter_01/CssMeasureColors"
+                to="../../../pages/sql_tutorials/SqlBasicQueries02"
                 style={linkText}
               >
-                CSS Measure & Colors
+                SQL Basics Queries 2
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="css-tutorial/BoxModel">
+          <NavItem eventKey="sql-tutorial/SqlFundamentalQueries01">
             <NavText>
               <NavLink
-                to="../../../pages/css_tutorials/quarter_01/CssBoxModel"
+                to="../../../pages/sql_tutorials/SqlFundamentalQueries01"
                 style={linkText}
               >
-                CSS Box model
+                SQL Fundamental Queries 1
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="css-tutorial/Text">
+          <NavItem eventKey="sql-tutorial/SqlFundamentalQueries02">
             <NavText>
               <NavLink
-                to="../../../pages/css_tutorials/quarter_01/CssText"
+                to="../../../pages/sql_tutorials/SqlFundamentalQueries02"
                 style={linkText}
               >
-                CSS Text
+                SQL Fundamental Queries 2
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="css-tutorial/Links">
+          <NavItem eventKey="sql-tutorial/SqlFundamentalQueries03">
             <NavText>
               <NavLink
-                to="../../../pages/css_tutorials/quarter_01/CssLinks"
+                to="../../../pages/sql_tutorials/SqlFundamentalQueries03"
                 style={linkText}
               >
-                CSS Links
+                SQL Fundamental Queries 3
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="css-tutorial/Lists">
+          <NavItem eventKey="sql-tutorial/SqlFundamentalQueries04">
             <NavText>
               <NavLink
-                to="../../../pages/css_tutorials/quarter_01/CssLists"
+                to="../../../pages/sql_tutorials/SqlFundamentalQueries04"
                 style={linkText}
               >
-                CSS Lists
-              </NavLink>
-            </NavText>
-          </NavItem>
-          <NavItem eventKey="css-tutorial/Tables">
-            <NavText>
-              <NavLink
-                to="../../../pages/css_tutorials/quarter_01/CssTables"
-                style={linkText}
-              >
-                CSS Tables
-              </NavLink>
-            </NavText>
-          </NavItem>
-          <NavItem eventKey="css-tutorial/PositioningVisual">
-            <NavText>
-              <NavLink
-                to="../../../pages/css_tutorials/quarter_01/CssPositioningVisual"
-                style={linkText}
-              >
-                CSS Positioning & Visuals
-              </NavLink>
-            </NavText>
-          </NavItem>
-          <NavItem eventKey="css-tutorial/Forms">
-            <NavText>
-              <NavLink
-                to="../../../pages/css_tutorials/quarter_01/CssForms"
-                style={linkText}
-              >
-                CSS Forms
-              </NavLink>
-            </NavText>
-          </NavItem>
-          <NavItem eventKey="css-tutorial/Layout">
-            <NavText>
-              <NavLink
-                to="../../../pages/css_tutorials/quarter_01/CssLayout"
-                style={linkText}
-              >
-                CSS Layout
+                SQL Fundamental Queries 4
               </NavLink>
             </NavText>
           </NavItem>
@@ -183,4 +144,4 @@ function CssTutorialNavbar() {
   );
 }
 
-export default CssTutorialNavbar;
+export default SqlTutorialNavbar;

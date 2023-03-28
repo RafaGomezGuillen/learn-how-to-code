@@ -19,5 +19,13 @@
   { "document_name": "positioning-css" },
   { "document_name": "selectors-css" },
   { "document_name": "tables-css" },
-  { "document_name": "text-css" }
+  { "document_name": "text-css" },
+  { "document_name": "basic-queries-01-sql" },
+  { "document_name": "basic-queries-02-sql" },
+  { "document_name": "fundamental-queries-01-sql" },
+  { "document_name": "fundamental-queries-02-sql" },
+  { "document_name": "fundamental-queries-03-sql" },
+  { "document_name": "fundamental-queries-04-sql" },
+  { "document_name": "basics-sql" },
+  { "document_name": "introduction-sql" }
 ]

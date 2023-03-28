@@ -63,7 +63,7 @@ function HomeContent() {
           <a
             id="code-link-color-2"
             className="code-link"
-            href="../../pages/Prueba"
+            href="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/lenguaje_de_marcas_y_sistemas_de_gestion_de_informacion"
           >
             CSS exercises
           </a>
@@ -97,7 +97,7 @@ function HomeContent() {
           <a
             id="code-link-color-2"
             className="code-link"
-            href="../../pages/Prueba"
+            href="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/programacion"
           >
             C# exercises
           </a>
@@ -121,7 +121,7 @@ function HomeContent() {
           <a
             id="code-link-color"
             className="code-link"
-            href="../../pages/Prueba"
+            href="../../pages/sql_tutorials/SqlIntroduction"
           >
             SQL tutorials
           </a>
@@ -129,7 +129,7 @@ function HomeContent() {
           <a
             id="code-link-color-2"
             className="code-link"
-            href="../../pages/Prueba"
+            href="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/base_de_datos"
           >
             SQL exercises
           </a>

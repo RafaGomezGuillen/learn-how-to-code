@@ -20,6 +20,14 @@ import CssPositioningVisual from "./pages/css_tutorials/quarter_01/CssPositionin
 import CssSelectors from "./pages/css_tutorials/quarter_01/CssSelectors";
 import CssTables from "./pages/css_tutorials/quarter_01/CssTables";
 import CssText from "./pages/css_tutorials/quarter_01/CssText";
+import SqlIntroduction from "./pages/sql_tutorials/SqlIntroduction";
+import SqlBasicQueries01 from "./pages/sql_tutorials/SqlBasicQueries01";
+import SqlBasicQueries02 from "./pages/sql_tutorials/SqlBasicQueries02";
+import SqlBasics from "./pages/sql_tutorials/SqlBasics";
+import SqlFundamentalQueries01 from "./pages/sql_tutorials/SqlFundamentalQueries01";
+import SqlFundamentalQueries02 from "./pages/sql_tutorials/SqlFundamentalQueries02";
+import SqlFundamentalQueries03 from "./pages/sql_tutorials/SqlFundamentalQueries03";
+import SqlFundamentalQueries04 from "./pages/sql_tutorials/SqlFundamentalQueries04";
 import { Routes, Route } from "react-router-dom";
 import "./App.css"
 
@@ -50,6 +58,14 @@ function App() {
         <Route exact path="/pages/css_tutorials/quarter_01/CssSelectors" element={<CssSelectors />} />
         <Route exact path="/pages/css_tutorials/quarter_01/CssTables" element={<CssTables />} />
         <Route exact path="/pages/css_tutorials/quarter_01/CssText" element={<CssText />} />
+        <Route exact path="/pages/sql_tutorials/SqlIntroduction" element={<SqlIntroduction />} />
+        <Route exact path="/pages/sql_tutorials/SqlBasicQueries01" element={<SqlBasicQueries01 />} />
+        <Route exact path="/pages/sql_tutorials/SqlBasicQueries02" element={<SqlBasicQueries02 />} />
+        <Route exact path="/pages/sql_tutorials/SqlBasics" element={<SqlBasics />} />
+        <Route exact path="/pages/sql_tutorials/SqlFundamentalQueries01" element={<SqlFundamentalQueries01 />} />
+        <Route exact path="/pages/sql_tutorials/SqlFundamentalQueries02" element={<SqlFundamentalQueries02 />} />
+        <Route exact path="/pages/sql_tutorials/SqlFundamentalQueries03" element={<SqlFundamentalQueries03 />} />
+        <Route exact path="/pages/sql_tutorials/SqlFundamentalQueries04" element={<SqlFundamentalQueries04 />} />
       </Routes>
     </>
   );

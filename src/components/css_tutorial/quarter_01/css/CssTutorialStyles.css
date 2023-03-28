@@ -50,3 +50,73 @@
   border: 1px solid #000;
   border-collapse: separate;
 }
+
+.div-example {
+  border: solid black;
+  height: 150px;
+  width: 100px;
+}
+
+.image-div-example {
+  background-image: url(../images/color_rosa.png);
+  height: 100px;
+}
+
+.image-div-example-1 {
+  background-image: url(../images/color_rosa.png);
+  height: 100px;
+  border: solid black;
+}
+
+.image-div-example-2 {
+  background-image: url(../images/color_rosa.png);
+  height: 100px;
+  border: solid black;
+  background-repeat: repeat-x;
+}
+
+.image-div-example-3 {
+  background-image: url(../images/color_rosa.png);
+  height: 100px;
+  border: solid black;
+  background-repeat: repeat-y;
+}
+
+.image-div-example-4 {
+  background-image: url(../images/color_rosa.png);
+  border: solid black;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+.image-div-example-5 {
+  background-image: url(../images/color_rosa.png);
+  border: solid black;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.image-div-example-6 {
+  background-image: url(../images/color_rosa.png);
+  border: solid black;
+  height: 100px;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.image-div-example-7 {
+  background-image: url(../images/color_rosa.png);
+  border: solid black;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.image-div-example-8 {
+  background-image: url(../images/color_rosa.png);
+  border: solid black;
+  background-position: left;
+  height: 100px;
+  background-repeat: no-repeat;
+}

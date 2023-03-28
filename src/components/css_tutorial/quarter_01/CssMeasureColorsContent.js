@@ -227,9 +227,9 @@ function CssMeasureColorsContent() {
         <hr></hr>
         <Redirection
           link1={"../../../pages/css_tutorials/quarter_01/CssSelectors"}
-          link2={"../../../pages/css_tutorials/quarter_01/CssText"}
+          link2={"../../../pages/css_tutorials/quarter_01/CssBoxModel"}
           name1={"Selectors"}
-          name2={"Text"}
+          name2={"Box Model"}
         />
       </div>
     </div>

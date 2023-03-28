@@ -665,9 +665,9 @@ function CssTextContent() {
         </div>
         <hr></hr>
         <Redirection
-          link1={"../../../pages/css_tutorials/quarter_01/CssMeasureColors"}
+          link1={"../../../pages/css_tutorials/quarter_01/CssBoxModel"}
           link2={"../../../pages/css_tutorials/quarter_01/CssLinks"}
-          name1={"Measure, colors"}
+          name1={"Box model"}
           name2={"Links"}
         />
       </div>

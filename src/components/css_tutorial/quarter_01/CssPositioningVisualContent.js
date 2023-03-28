@@ -379,6 +379,10 @@ function CssPositioningVisualContent() {
           insideHeight={"83%"}
         />
         <div className="examples">
+          <p style={{ textAlign: "center" }}>
+            If you are on the mobile version, it is preferable to put it in a
+            horizontal position.{" "}
+          </p>
           <div style={{ border: "solid black" }}>
             <p
               style={{ border: "solid black", width: "100px", height: "100px" }}
@@ -501,7 +505,7 @@ function CssPositioningVisualContent() {
         <CodeContainer
           title={"HTML + CSS"}
           code={
-            '<table>\n  <tr>\n    <td>1</td>\n    <td>2</td>\n    <td>3</td>\n </tr>\n  <tr>\n    <td>4</td>\n    <td class="5">5</td>\n    <td>6</td>\n </tr>\n  <tr>\n    <td>7</td>\n    <td>8</td>\n    <td>9</td>\n </tr>\n</table>\n\n/* 1st example */\n.5 { display: none; }\n\n/* 2nd example */\n.5 { visibilty: hidden; }'
+            '<table>\n  <tr>\n    <td>1</td>\n    <td>2</td>\n    <td>3</td>\n </tr>\n  <tr>\n    <td>4</td>\n    <td class="box">5</td>\n    <td>6</td>\n </tr>\n  <tr>\n    <td>7</td>\n    <td>8</td>\n    <td>9</td>\n </tr>\n</table>\n\n/* 1st example */\n.box { display: none; }\n\n/* 2nd example */\n.box { visibilty: hidden; }'
           }
           containerHeight={"610px"}
           insideHeight={"81%"}
@@ -592,6 +596,14 @@ function CssPositioningVisualContent() {
             </li>
           </ul>
         </p>
+        <CodeContainer
+          title={"HTML + CSS"}
+          code={
+            "/* 1st example */\np { overflow: visible; }\n\n/* 2nd example */\np { overflow: hidden; }\n\n/* 3rd example */\np { overflow: scroll; }"
+          }
+          containerHeight={"300px"}
+          insideHeight={"62%"}
+        />
         <div className="examples">
           <p
             style={{
@@ -646,6 +658,47 @@ function CssPositioningVisualContent() {
           the official specification allows negative numbers, the number 0 is
           generally considered the lowest level.
         </p>
+        <CodeContainer
+          title={"HTML + CSS"}
+          code={'<p class="p-1"></p>\n<p class="p-2"></p>\n<p class="p-3"></p>\n\np {\n  border: solid black;\n  width: 250px;\n  height: 200px;\n  position: relative;\n}\n\n.p-1 {\n  background-color: yellow;\n  z-index: 1;\n}\n\n.p-2 {\n  z-index: 2;\n  bottom: 180px;\n  left: 20px;\n  background-color: blue;\n}\n\n.p-3 {\n  z-index: 3;\n  bottom: 340px;\n  left: 40px;\n  background-color: red;\n}'}
+          containerHeight={"740px"}
+          insideHeight={"85%"}
+        />
+        <div className="examples" style={{ height: "305px" }}>
+          <p
+            style={{
+              border: "solid black",
+              width: "250px",
+              height: "200px",
+              zIndex: "0",
+              backgroundColor: "yellow",
+            }}
+          ></p>
+          <p
+            style={{
+              border: "solid black",
+              width: "250px",
+              height: "200px",
+              zIndex: "1",
+              position: "relative",
+              bottom: "180px",
+              left: "20px",
+              backgroundColor: "blue",
+            }}
+          ></p>
+          <p
+            style={{
+              border: "solid black",
+              width: "250px",
+              height: "200px",
+              zIndex: "2",
+              position: "relative",
+              bottom: "340px",
+              left: "40px",
+              backgroundColor: "red",
+            }}
+          ></p>
+        </div>
         <hr></hr>
         <Redirection
           link1={"../../../pages/css_tutorials/quarter_01/CssTables"}
