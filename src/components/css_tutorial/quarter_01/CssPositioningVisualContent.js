@@ -42,30 +42,60 @@ function CssPositioningVisualContent() {
         <table>
           <tr>
             <td>
-              <a href="#normal-positioning" className="links">normal-positioning</a>
+              <a href="#normal-positioning" className="links">
+                normal-positioning
+              </a>
             </td>
           </tr>
           <tr>
             <td>
-              <a href="#relative-positioning" className="links">relative-positioning</a>
+              <a href="#relative-positioning" className="links">
+                relative-positioning
+              </a>
             </td>
           </tr>
           <tr>
             <td>
-              <a href="#absolute-positioning" className="links">absolute-positioning</a>
+              <a href="#absolute-positioning" className="links">
+                absolute-positioning
+              </a>
             </td>
           </tr>
           <tr>
             <td>
-              <a href="#fixed-positioning" className="links">fixed-positioning</a>
+              <a href="#fixed-positioning" className="links">
+                fixed-positioning
+              </a>
             </td>
           </tr>
           <tr>
             <td>
-              <a href="#float-positioning" className="links">float-positioning</a>
+              <a href="#float-positioning" className="links">
+                float-positioning
+              </a>
             </td>
           </tr>
-          
+          <tr>
+            <td>
+              <a href="#display-visibility" className="links">
+                display and visibility property
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#overflow" className="links">
+                overflow property
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#z-index" className="links">
+                z-index property
+              </a>
+            </td>
+          </tr>
         </table>
         <hr></hr>
         <h2>Element Types</h2>
@@ -296,17 +326,326 @@ function CssPositioningVisualContent() {
           down the page in their browser window.
           <br></br>
           <br></br>
-          An example of fixed positioning is what are watching on the bottom left of your screen.
+          An example of fixed positioning is what are watching on the bottom
+          left of your screen.
         </p>
         <CodeContainer
           title={"HTML + CSS"}
-          code={"<div class=\"start-container\">\n  <a href=\"#\">\n    <img class=\"start-img\">\n  </a>\n</div>\n\n.start-container {\n  width: 60px;\n  height: 60px;\n  border-radius: 100%;\n  background-color: var(--background-color-header);\n  border: solid var(--font-color);\n  position: fixed;\n  left: 95%;\n  top: 90%\n}\n\n.start-container a {\n  width: 50px;\n  height: 50px;\n  display: block\n}\n\n.start-img {\n  color: var(--font-color);\n  width: 50px;\n  height: 50px;\n  position: relative;\n  left: 2px;\n}"}
+          code={
+            '<div class="start-container">\n  <a href="#">\n    <img class="start-img">\n  </a>\n</div>\n\n.start-container {\n  width: 60px;\n  height: 60px;\n  border-radius: 100%;\n  background-color: var(--background-color-header);\n  border: solid var(--font-color);\n  position: fixed;\n  left: 95%;\n  top: 90%\n}\n\n.start-container a {\n  width: 50px;\n  height: 50px;\n  display: block\n}\n\n.start-img {\n  color: var(--font-color);\n  width: 50px;\n  height: 50px;\n  position: relative;\n  left: 2px;\n}'
+          }
           containerHeight={"770px"}
           insideHeight={"85%"}
         />
         <hr></hr>
         <h2 id="float-positioning">Float positioning</h2>
-        <p></p>
+        <p>
+          When a box is positioned using the floating positioning model, it
+          automatically becomes a floating box, which means that it is moved to
+          the leftmost or rightmost area of ​​its original position.
+          <br></br>
+          <br></br>
+          <ul>
+            <li>
+              The box no longer belongs to the normal flow of the page, which
+              means that the rest of the boxes occupy the place left by the
+              floating box.
+            </li>
+            <li>
+              The floating box is positioned as far to the left or right as
+              possible of the position it was originally in.
+            </li>
+            <li>
+              If a <strong>left</strong> value is indicated, the box moves to
+              the leftmost point possible on that same line (if there is no
+              space on that line, the box moves down one line and is displayed
+              as far left as possible on that new line ). All other adjacent
+              elements fit and flow around the floating box.
+            </li>
+            <li>
+              The <strong>right</strong> value works identically, except that in
+              this case, the box is moved to the right. The value{" "}
+              <strong>none</strong> allows you to override floating positioning
+              so that the element is displayed in its original position.
+            </li>
+          </ul>
+        </p>
+        <CodeContainer
+          title={"HTML + CSS"}
+          code={
+            '<div>\n  <p class="float">Box 1 with float</p>\n  <p>Box 2</p>\n  <p>Box 3</p>\n</div>\n\n/* First example */\ndiv {\n  border: solid black;\n}\n\ndiv p {\n  border: solid black;\n  width: 100px;\n  height: 100px\n}\n\n.float {\n  float: right\n}\n\n/* 2nd example */\np { float: left; }\n\n/* 3rd example */\np { float: right; }'
+          }
+          containerHeight={"690px"}
+          insideHeight={"83%"}
+        />
+        <div className="examples">
+          <div style={{ border: "solid black" }}>
+            <p
+              style={{ border: "solid black", width: "100px", height: "100px" }}
+            >
+              Box 1
+            </p>
+            <p
+              style={{ border: "solid black", width: "100px", height: "100px" }}
+            >
+              Box 2
+            </p>
+            <p
+              style={{ border: "solid black", width: "100px", height: "100px" }}
+            >
+              Box 3
+            </p>
+          </div>
+          <div style={{ border: "solid black" }}>
+            <p
+              style={{
+                border: "solid black",
+                width: "100px",
+                height: "100px",
+                float: "right",
+              }}
+            >
+              Box 1 with float
+            </p>
+            <p
+              style={{ border: "solid black", width: "100px", height: "100px" }}
+            >
+              Box 2
+            </p>
+            <p
+              style={{ border: "solid black", width: "100px", height: "100px" }}
+            >
+              Box 3
+            </p>
+          </div>
+          <div style={{ border: "solid black", height: "130px" }}>
+            <p
+              style={{
+                border: "solid black",
+                width: "100px",
+                height: "100px",
+                float: "left",
+              }}
+            >
+              Box 1. float left
+            </p>
+            <p
+              style={{
+                border: "solid black",
+                width: "100px",
+                height: "100px",
+                float: "left",
+              }}
+            >
+              Box 2. float left
+            </p>
+            <p
+              style={{
+                border: "solid black",
+                width: "100px",
+                height: "100px",
+                float: "left",
+              }}
+            >
+              Box 3. float left
+            </p>
+          </div>
+          <div style={{ border: "solid black", height: "130px" }}>
+            <p
+              style={{
+                border: "solid black",
+                width: "100px",
+                height: "100px",
+                float: "right",
+              }}
+            >
+              Box 1. float right
+            </p>
+            <p
+              style={{
+                border: "solid black",
+                width: "100px",
+                height: "100px",
+                float: "right",
+              }}
+            >
+              Box 2. float right
+            </p>
+            <p
+              style={{
+                border: "solid black",
+                width: "100px",
+                height: "100px",
+                float: "right",
+              }}
+            >
+              Box 3. float right
+            </p>
+          </div>
+        </div>
+        <hr></hr>
+        <h2 id="display-visibility">Display and visibility property</h2>
+        <p>
+          The <strong>display</strong> property allows you to completely hide an
+          element by making it disappear from the page. Since the hidden element
+          is not displayed, the other elements on the page are moved to take its
+          place.
+          <br></br>
+          <br></br>
+          On the other hand, the <strong>visibility</strong> property allows you
+          to make an element invisible, which means that the browser creates the
+          element's box but does not show it. In this case, the rest of the
+          elements on the page do not change their position, since although the
+          box is not visible, it continues to occupy space.
+        </p>
+        <CodeContainer
+          title={"HTML + CSS"}
+          code={
+            '<table>\n  <tr>\n    <td>1</td>\n    <td>2</td>\n    <td>3</td>\n </tr>\n  <tr>\n    <td>4</td>\n    <td class="5">5</td>\n    <td>6</td>\n </tr>\n  <tr>\n    <td>7</td>\n    <td>8</td>\n    <td>9</td>\n </tr>\n</table>\n\n/* 1st example */\n.5 { display: none; }\n\n/* 2nd example */\n.5 { visibilty: hidden; }'
+          }
+          containerHeight={"610px"}
+          insideHeight={"81%"}
+        />
+        <div className="examples">
+          <br></br>
+          <table>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+            </tr>
+          </table>
+          <p style={{ textAlign: "center" }}>5 = display: none</p>
+          <table>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td style={{ display: "none" }}>5</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+            </tr>
+          </table>
+          <p style={{ textAlign: "center" }}>5 = visibility: hidden</p>
+          <table>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td style={{ visibility: "hidden" }}>5</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+            </tr>
+          </table>
+          <br></br>
+        </div>
+        <hr></hr>
+        <h2 id="overflow">Overflow property</h2>
+        <p>
+          CSS defines the overflow property to control the way in which the
+          contents that overflow from your elements are displayed.
+          <br></br>
+          <br></br>
+          <ul>
+            <li>
+              <strong>visible</strong>: the content is not cut off and is
+              displayed over hanging the area reserved for displaying the
+              element. This is the default behavior.
+            </li>
+            <li>
+              <strong>hidden</strong>: the excess content is hidden and only the
+              part of the content that fits within the area reserved for the
+              element is displayed.
+            </li>
+            <li>
+              <strong>scroll</strong>: only the content that fits within the
+              area reserved for the element is displayed, but scroll bars are
+              also displayed that allow the rest of the content to be viewed.
+            </li>
+            <li>
+              <strong>auto</strong>: the behavior depends on the browser,
+              although it is usually the same as the scroll property.
+            </li>
+          </ul>
+        </p>
+        <div className="examples">
+          <p
+            style={{
+              border: "solid black",
+              width: "200px",
+              height: "200px",
+              overflow: "visible",
+            }}
+          >
+            <strong>overflow: visible</strong>
+            <br></br>Id nulla deserunt sit deserunt Commodo duis irure commodo
+            eu et dolor in duis velit occaecat et in velit tempor nulla deserunt
+            sit.
+          </p>
+          <p
+            style={{
+              border: "solid black",
+              width: "200px",
+              height: "200px",
+              overflow: "hidden",
+            }}
+          >
+            <strong>overflow: hidden</strong>
+            <br></br>Id nulla deserunt sit deserunt Commodo duis irure commodo
+            eu et dolor in duis velit occaecat et in velit tempor nulla deserunt
+            sit.
+          </p>
+          <p
+            style={{
+              border: "solid black",
+              width: "200px",
+              height: "200px",
+              overflow: "scroll",
+            }}
+          >
+            <strong>overflow: scroll</strong>
+            <br></br>Id nulla deserunt sit deserunt Commodo duis irure commodo
+            eu et dolor in duis velit occaecat et in velit tempor nulla deserunt
+            sit.
+          </p>
+        </div>
+        <hr></hr>
+        <h2 id="z-index">z-index property</h2>
+        <p>
+          The three-dimensional position of an element is set on a third axis
+          called Z and is controlled by the z-index property. Using this
+          property it is possible to create complex pages with several levels or
+          layers.
+          <br></br>
+          <br></br>
+          The most common value of the z-index property is an integer. Although
+          the official specification allows negative numbers, the number 0 is
+          generally considered the lowest level.
+        </p>
         <hr></hr>
         <Redirection
           link1={"../../../pages/css_tutorials/quarter_01/CssTables"}
