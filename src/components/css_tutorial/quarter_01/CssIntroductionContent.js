@@ -54,7 +54,7 @@ function CssIntroductionContent() {
           layouts, grid layouts, and animations.
         </p>
         <hr></hr>
-        <h2>CSS Especification</h2>
+        <h2>CSS Specification</h2>
         <p>
           The official specification or standard currently used to design web
           pages with CSS is CSS version 2.1, last updated on June 7, 2011.
