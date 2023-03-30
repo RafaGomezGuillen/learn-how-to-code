@@ -1,6 +1,6 @@
 import React from "react";
-import CodeContainer from "../code_container/CodeContainer";
 import Redirection from "../redirection/Redirection";
+import Instructions from "./Instructions.pdf";
 
 function SqlBasicsContent() {
   return (
@@ -8,25 +8,41 @@ function SqlBasicsContent() {
       <h1>SQL BASICS</h1>
       <div className="introduction">
         <p>
-          From its first versions, HTML included support for creating data
-          tables in web pages. In addition to being simple, the HTML defined
-          model is very flexible and quite complete.
+          In this case we used to work with{" "}
+          <a
+            href="https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16"
+            className="links"
+          >
+            SQL Server Management Studio (SSMS)
+          </a>{" "}
+          created by Microsoft.
+        </p>
+        <p>
+          Also, we used to work with a SQL server virtual machine installed on
+          Virtual box.
         </p>
       </div>
       <hr></hr>
       <div className="content-code">
-        <h2>Basic tables</h2>
+        <h2>STEP 1</h2>
         <p>
-          aa
+          Download and decompress this{" "}
+          <a
+            href="https://drive.google.com/file/d/1jWRMOtdQsULBj6l6svYrWMU26WHQpo0A/view"
+            className="links"
+          >
+            file
+          </a>
+          . Here it is the Ubuntu SQL server virtual machine.
         </p>
-        <CodeContainer
-          title={"SQL"}
-          code={
-            "aa"
-          }
-          containerHeight={"150px"}
-          insideHeight={"30%"}
-        />
+        <h2>STEP 2</h2>
+        <p>
+          Follow the instructions of this{" "}
+          <a href={Instructions} className="links">
+            PDF
+          </a>{" "}
+          (it is in spanish, Im not going to translate it for you).
+        </p>
       </div>
       <hr></hr>
       <Redirection

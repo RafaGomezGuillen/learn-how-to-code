@@ -85,14 +85,78 @@ function SqlIntroductionContent() {
         <hr></hr>
         <h2>Basic SQL operation</h2>
         <p>
-          
+          This is what a SQL code looks like.
+          <ol>
+            <li>
+              First of all, we create the database, in this case is called
+              store.
+            </li>
+            <li>
+              Then we select the database using "USE DATABASE" to start coding
+              in store.
+            </li>
+            <li>
+              We create a table called clients, this table has the attributes{" "}
+              <strong>id, name, surname</strong>.
+            </li>
+            <li>
+              We insert values, in this case (1 to id, 'Rafa' to name, 'Gomez'
+              to surname).
+            </li>
+            <li>
+              Finally, to watch the column we select the attributes from clients
+              that we want to watch.
+            </li>
+          </ol>
         </p>
         <CodeContainer
           title={"SQL"}
-          code={"SELECT Id, name, surname\nFROM clients"}
-          containerHeight={"150px"}
-          insideHeight={"30%"}
-        />        
+          code={
+            "CREATE DATABASE store;\nGO\n\nUSE DATABASE store;\nGO\n\nCREATE TABLE clients (\n  id int,\n  name varchar(50),\n  surname varchar(100)\n);\nGO\n\nINSERT store (id, name, surname)\nVALUES (1, 'Rafa', 'Gomez');\nGO\n\nSELECT id, name, surname\nFROM clients;\nGO"
+          }
+          containerHeight={"550px"}
+          insideHeight={"80%"}
+        />
+        <div className="examples">
+          <br></br>
+          <table>
+            <tr>
+              <td>id</td>
+              <td>name</td>
+              <td>surname</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Rafa</td>
+              <td>Gomez</td>
+            </tr>
+          </table>
+          <br></br>
+        </div>
+        <hr></hr>
+        <h2>SQL syntax</h2>
+        <p>
+          <ul>
+            <li>
+              SQL keywords are NOT case sensitive: select is the same as SELECT.
+            </li>
+            <li>
+              Semicolon is the standard way to separate each SQL statement in
+              database systems that allow more than one SQL statement to be
+              executed in the same call to the server. But you are not forced to
+              use it.
+            </li>
+            <li>The same with GO at the end of a sentence.</li>
+          </ul>
+        </p>
+        <CodeContainer
+          title={"SQL"}
+          code={
+            "CREATE DATABASE store;\nGO\n\n--This line does the same as the line above\ncreate database store"
+          }
+          containerHeight={"220px"}
+          insideHeight={"55%"}
+        />
       </div>
       <hr></hr>
       <Redirection
