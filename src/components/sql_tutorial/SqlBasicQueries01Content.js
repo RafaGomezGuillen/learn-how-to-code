@@ -25,7 +25,78 @@ function SqlBasicQueries01Content() {
       </div>
       <hr></hr>
       <div className="content-code">
-        <h2>Create a database</h2>
+        <table>
+          <tr>
+            <td>
+              <a href="#create-database" className="links">
+                Create database
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#create-table" className="links">
+                Create a table
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#drop-table" className="links">
+                Drop a table
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#adding-information" className="links">
+                Adding information to a table
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#retrieve" className="links">
+                Retrieve stored information
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#relational-operators" className="links">
+                Relational operations
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#delete-records" className="links">
+                Delete records
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#update-records" className="links">
+                Update records
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#comments" className="links">
+                Comments
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#null-value" className="links">Null value</a>
+            </td>
+          </tr>
+        </table>
+        <hr></hr>
+        <h2 id="create-database">Create a database</h2>
         <p>
           A database is a set of data belonging to the same context and
           systematically stored for later use.
@@ -55,7 +126,7 @@ function SqlBasicQueries01Content() {
           insideHeight={"30%"}
         />
         <hr></hr>
-        <h2>Create a table</h2>
+        <h2 id="create-table">Create a table</h2>
         <p>
           A table is the structure within a database where we can store
           information corresponding to something, whose structure remains the
@@ -106,7 +177,7 @@ function SqlBasicQueries01Content() {
           insideHeight={"35%"}
         />
         <hr></hr>
-        <h2>Drop a table</h2>
+        <h2 id="drop-table">Drop a table</h2>
         <p>
           To delete a table we use "drop table" next to the name of the table to
           be deleted.
@@ -139,7 +210,7 @@ function SqlBasicQueries01Content() {
           results in our learning tests.
         </p>
         <hr></hr>
-        <h2>Add information to a table</h2>
+        <h2 id="adding-information">Add information to a table</h2>
         <p>
           There are several ways to add records/rows in a table.
           <br></br>
@@ -187,7 +258,7 @@ function SqlBasicQueries01Content() {
           insideHeight={"48%"}
         />
         <hr></hr>
-        <h2>Retrieve stored information</h2>
+        <h2 id="retrieve">Retrieve stored information</h2>
         <p>
           select comma separated list of fields from TABLENAME
           <br></br>
@@ -225,7 +296,7 @@ function SqlBasicQueries01Content() {
           <br></br>
         </div>
         <hr></hr>
-        <h2>Relational operators</h2>
+        <h2 id="relational-operators">Relational operators</h2>
         <p>
           Operators are symbols that allow you to perform mathematical
           operations, concatenate strings, and make comparisons.
@@ -256,7 +327,7 @@ function SqlBasicQueries01Content() {
           insideHeight={"73%"}
         />
         <hr></hr>
-        <h2>Delete records</h2>
+        <h2 id="delete-records">Delete records</h2>
         <p>
           The command to remove records from a table is delete.
           <br></br>
@@ -264,16 +335,85 @@ function SqlBasicQueries01Content() {
           Deleting records is irreversibly deleting information from the table.
           <br></br>
           <br></br>
-          Normally we will specify the filtering condition of records to
-          delete: delete from TABLE_NAME where CONDITION
+          Normally we will specify the filtering condition of records to delete:
+          delete from TABLE_NAME where CONDITION
         </p>
         <CodeContainer
           title={"SQL"}
           code={
-            "DELETE FROM clients\nid <= 12;\nGo\n\nDELETE FROM clients\nsurname = 'Hills';\nGo\n\n"
+            "DELETE FROM clients\nid <= 12;\nGo\n\nDELETE FROM clients\nsurname = 'Hills';\nGo"
           }
           containerHeight={"280px"}
           insideHeight={"60%"}
+        />
+        <hr></hr>
+        <h2 id="update-records">Update records</h2>
+        <p>
+          Updating records is changing part of their content, keeping the rest
+          of their information unchanged.
+          <br></br>
+          <br></br>
+          The command to update information in the records of a table is update.
+          <br></br>
+          <br></br>
+          It will always be done with caution. If we don't filter the records to
+          update using where, the update will affect ALL the records.
+        </p>
+        <CodeContainer
+          title={"SQL"}
+          code={
+            "UPDATE clients\nSET id = id + 2\nWHERE name = 'Pablo';\nGO\n\nUPDATE clients\nSET surname = 'Garcia'\nWHERE birthday = '2/11/2000';\nGO"
+          }
+          containerHeight={"320px"}
+          insideHeight={"64%"}
+        />
+        <hr></hr>
+        <h2 id="comments">Comments</h2>
+        <p>
+          We can use symbols in sql files so that we can document the operations
+          we perform but without affecting the functionality of our code.
+          <br></br>
+          <br></br>
+          Anything we put on a line after two hyphens will not be executed.
+          <br></br>
+          <br></br>
+          What we put between the symbols /* and */ will not be executed. It can
+          occupy more than one line.
+        </p>
+        <CodeContainer
+          title={"SQL"}
+          code={
+            "--This is one line comment\nUPDATE clients\nSET id = id + 2\nWHERE name = 'Pablo';\nGO\n\n/* Two line\ncomment */\nUPDATE clients\nSET surname = 'Garcia'\nWHERE birthday = '2/11/2000';\nGO"
+          }
+          containerHeight={"380px"}
+          insideHeight={"70%"}
+        />
+        <hr></hr>
+        <h2 id="null-value">Null value</h2>
+        <p>
+          null means "unknown data" or "non-existent value". It is not the same
+          as a value "0", an empty string, or a literal string "null".
+          <br></br>
+          <br></br>
+          We can assign it directly, placing NULL in the list of values ​​of an
+          insert or not assigning it a value by not adding the field in the list
+          of fields of the insert.
+          <br></br>
+          <br></br>
+          You can assign null values or not to a field camp, for example DNI
+          does not accept null values, however, name does.
+          <br></br>
+          <br></br>
+          It will never be worth placing: &lt;&gt; null or = null. Repalce it
+          with "is null" or "is not null".
+        </p>
+        <CodeContainer
+          title={"SQL"}
+          code={
+            "INSERT clients\n(id, DNI, name, surname, birthday)\nVALUES (1, '12345678N', 'Moby', 'Dick', null);\nGO\n\nCREATE TABLE clients (\n  id int,\n  DNI char(9) not null,\n  name varchar(50) null,\n  surname varchar(100),\n  birthday datetime\n);\nGO\n\nSELECT DNI\nFROM clients\nWHERE name is null"
+          }
+          containerHeight={"480px"}
+          insideHeight={"77%"}
         />
       </div>
       <hr></hr>
