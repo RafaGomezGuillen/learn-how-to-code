@@ -25,7 +25,7 @@ function Filter(value) {
     "measure & colors-css": "../../pages/css_tutorials/quarter_01/CssMeasureColors",
     "positioning-css": "../../pages/css_tutorials/quarter_01/CssPositioningVisual",
     "selectors-css": "../../pages/css_tutorials/quarter_01/CssSelectors",
-    "tables-css": "../../pages/css_tutorials/quarter_01/CssTable",
+    "tables-css": "../../pages/css_tutorials/quarter_01/CssTables",
     "text-css": "../../pages/css_tutorials/quarter_01/CssText",
     "introduction-sql": "../../pages/sql_tutorials/SqlIntroduction",
     "basics-sql": "../../pages/sql_tutorials/SqlBasics",

@@ -270,10 +270,10 @@ function SqlBasicQueries01Content() {
         <CodeContainer
           title={"SQL"}
           code={
-            "SELECT *\nFROM clients;\nGO\n\nSELECT id, DNI, name, surname, birthday;\nGO"
+            "SELECT *\nFROM clients;\nGO\n\nSELECT id, DNI, name, surname, birthday;\nFROM clients;\nGO"
           }
-          containerHeight={"250px"}
-          insideHeight={"54%"}
+          containerHeight={"270px"}
+          insideHeight={"58%"}
         />
         <div className="examples">
           <br></br>

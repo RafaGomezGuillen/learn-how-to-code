@@ -54,7 +54,7 @@ function HomeNavbar() {
           <NavIcon>
             <FaHtml5 style={iconStyle} />
           </NavIcon>
-          <NavText style={ linkText }>HTML</NavText>
+          <NavText style={linkText}>HTML</NavText>
           <NavItem eventKey="html/Tutorial">
             <NavText>
               <NavLink to="/pages/html_tutorials/HtmlHome" style={linkText}>
@@ -64,7 +64,10 @@ function HomeNavbar() {
           </NavItem>
           <NavItem eventKey="html/Exercises">
             <NavText>
-              <NavLink to="/pages/html_exercises/HtmlExercises" style={linkText}>
+              <NavLink
+                to="/pages/html_exercises/HtmlExercises"
+                style={linkText}
+              >
                 HTML Exercises
               </NavLink>
             </NavText>
@@ -77,16 +80,22 @@ function HomeNavbar() {
           <NavText style={linkText}>CSS</NavText>
           <NavItem eventKey="css/Tutorial">
             <NavText>
-              <NavLink to="/pages/css_tutorials/quarter_01/CssIntroduction" style={linkText}>
+              <NavLink
+                to="/pages/css_tutorials/quarter_01/CssIntroduction"
+                style={linkText}
+              >
                 CSS Tutorial
               </NavLink>
             </NavText>
           </NavItem>
           <NavItem eventKey="css/Exercises">
             <NavText>
-              <NavLink to="../../../pages/Home" style={linkText}>
+              <a
+                href="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/lenguaje_de_marcas_y_sistemas_de_gestion_de_informacion"
+                style={linkText}
+              >
                 CSS Exercises
-              </NavLink>
+              </a>
             </NavText>
           </NavItem>
         </NavItem>
@@ -104,9 +113,12 @@ function HomeNavbar() {
           </NavItem>
           <NavItem eventKey="c#/Exercises">
             <NavText>
-              <NavLink to="../../../pages/Home" style={linkText}>
+              <a
+                href="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/programacion"
+                style={linkText}
+              >
                 C# Exercises
-              </NavLink>
+              </a>
             </NavText>
           </NavItem>
         </NavItem>
@@ -117,16 +129,22 @@ function HomeNavbar() {
           <NavText style={linkText}>SQL</NavText>
           <NavItem eventKey="sql/Tutorial">
             <NavText>
-              <NavLink to="../../../pages/Home" style={linkText}>
+              <NavLink
+                to="../../../pages/sql_tutorials/SqlIntroduction"
+                style={linkText}
+              >
                 SQL Tutorial
               </NavLink>
             </NavText>
           </NavItem>
           <NavItem eventKey="sql/Exercises">
             <NavText>
-              <NavLink to="../../../pages/Home" style={linkText}>
+              <a
+                href="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/base_de_datos"
+                style={linkText}
+              >
                 SQL Exercises
-              </NavLink>
+              </a>
             </NavText>
           </NavItem>
         </NavItem>

@@ -101,6 +101,7 @@ body {
 .examples {
   margin: 15px;
   border: solid var(--background-color-header);
+  overflow-y: auto;
 }
 
 .examples * {
