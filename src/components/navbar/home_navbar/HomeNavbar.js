@@ -106,9 +106,12 @@ function HomeNavbar() {
           <NavText style={linkText}>C#</NavText>
           <NavItem eventKey="c#/Tutorial">
             <NavText>
-              <NavLink to="../../../pages/Home" style={linkText}>
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                style={linkText}
+              >
                 C# Tutorial
-              </NavLink>
+              </a>
             </NavText>
           </NavItem>
           <NavItem eventKey="c#/Exercises">

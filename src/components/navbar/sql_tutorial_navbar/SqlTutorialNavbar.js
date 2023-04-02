@@ -122,16 +122,6 @@ function SqlTutorialNavbar() {
               </NavLink>
             </NavText>
           </NavItem>
-          <NavItem eventKey="sql-tutorial/SqlFundamentalQueries04">
-            <NavText>
-              <NavLink
-                to="../../../pages/sql_tutorials/SqlFundamentalQueries04"
-                style={linkText}
-              >
-                SQL Fundamental Queries 4
-              </NavLink>
-            </NavText>
-          </NavItem>
         </NavItem>
         <NavItem eventKey="dark">
           <NavIcon>

@@ -27,7 +27,6 @@ import SqlBasics from "./pages/sql_tutorials/SqlBasics";
 import SqlFundamentalQueries01 from "./pages/sql_tutorials/SqlFundamentalQueries01";
 import SqlFundamentalQueries02 from "./pages/sql_tutorials/SqlFundamentalQueries02";
 import SqlFundamentalQueries03 from "./pages/sql_tutorials/SqlFundamentalQueries03";
-import SqlFundamentalQueries04 from "./pages/sql_tutorials/SqlFundamentalQueries04";
 import { Routes, Route } from "react-router-dom";
 import "./App.css"
 
@@ -65,7 +64,6 @@ function App() {
         <Route exact path="/pages/sql_tutorials/SqlFundamentalQueries01" element={<SqlFundamentalQueries01 />} />
         <Route exact path="/pages/sql_tutorials/SqlFundamentalQueries02" element={<SqlFundamentalQueries02 />} />
         <Route exact path="/pages/sql_tutorials/SqlFundamentalQueries03" element={<SqlFundamentalQueries03 />} />
-        <Route exact path="/pages/sql_tutorials/SqlFundamentalQueries04" element={<SqlFundamentalQueries04 />} />
       </Routes>
     </>
   );

@@ -89,7 +89,7 @@ function HomeContent() {
           <a
             id="code-link-color"
             className="code-link"
-            href="../../pages/Prueba"
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
           >
             C# tutorials
           </a>

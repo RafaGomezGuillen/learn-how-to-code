@@ -29,10 +29,9 @@ function Filter(value) {
     "text-css": "../../pages/css_tutorials/quarter_01/CssText",
     "introduction-sql": "../../pages/sql_tutorials/SqlIntroduction",
     "basics-sql": "../../pages/sql_tutorials/SqlBasics",
-    "fundamental-queries-04-sql": "../../pages/sql_tutorials/SqlFundamentalQueries04",
     "fundamental-queries-03-sql": "../../pages/sql_tutorials/SqlFundamentalQueries03",
     "fundamental-queries-02-sql": "../../pages/sql_tutorials/SqlFundamentalQueries02",
-    "fundamental-queries-04-sql": "../../pages/sql_tutorials/SqlFundamentalQueries01",
+    "fundamental-queries-01-sql": "../../pages/sql_tutorials/SqlFundamentalQueries01",
     "basic-queries-02-sql": "../../pages/sql_tutorials/SqlBasicQueries02",
     "basic-queries-01-sql": "../../pages/sql_tutorials/SqlBasicQueries01",
   };
