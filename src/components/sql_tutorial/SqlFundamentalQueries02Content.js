@@ -22,7 +22,7 @@ function SqlFundamentalQueries02Content() {
         <CodeContainer
           title={"SQL"}
           code={
-            "--Show clients order by DNI\nSELECT id, DNI, name, surname, birthday\nFrom clients\nORDER BY DNI;\nGO\n\n--Show clients order by surname\nSELECT id, DNI, name, surname, birthday\nFrom clients\nORDER BY name;\nGO\n\n--Show clients order by id desc\nSELECT id, DNI, name, surname, birthday\nFrom clients\nORDER BY id DESC;\nGO\n\n--Show clients order by year desc\nSELECT id, DNI, name, surname, birthday\nFrom clients\nORDER BY DATEPART(year, birthday) desc;\nGO"
+            "--Show clients order by DNI\nSELECT id, DNI, name, surname, birthday\nFrom clients\nORDER BY DNI;\nGO\n\n--Show clients order by surname\nSELECT id, DNI, name, surname, birthday\nFrom clients\nORDER BY surname;\nGO\n\n--Show clients order by id desc\nSELECT id, DNI, name, surname, birthday\nFrom clients\nORDER BY id DESC;\nGO\n\n--Show clients order by year desc\nSELECT id, DNI, name, surname, birthday\nFrom clients\nORDER BY DATEPART(year, birthday) desc;\nGO"
           }
           containerHeight={"600px"}
           insideHeight={"82%"}
@@ -171,13 +171,13 @@ function SqlFundamentalQueries02Content() {
         <CodeContainer
           title={"SQL"}
           code={
-            "--Inserting more values\nINSERT clients\n(id, DNI, name, surname, birthday)\nVALUES (4, '74598712D', 'Bart', 'Simspon', '21/4/1997');\nGO\n\nINSERT clients\n(id, DNI, name, surname, birthday)\nVALUES (5, '42462457R', 'Deckard', 'Runner', '13/11/2019');\nGO\n\nINSERT clients\n(id, DNI, name, surname, birthday)\nVALUES (6, '43981424N', 'Michael', 'Corleone', '29/7/1960');\nGO\n\nSELECT id, DNI, name, surname, birthday;\nFROM clients\nWHERE (id < 2) and (id > 4);\nGO\n\nSELECT id, DNI, name, surname, birthday;\nFROM clients\nWHERE (id = 1) or (SUBSTRING(name, 1, 1) = 'B');\nGO\n\nSELECT id, DNI, name, surname, birthday;\nFROM clients\nWHERE not(surname = 'Simpson');\nGO"
+            "--Inserting more values\nINSERT clients\n(id, DNI, name, surname, birthday)\nVALUES (4, '74598712D', 'Bart', 'Simspon', '21/4/1997');\nGO\n\nINSERT clients\n(id, DNI, name, surname, birthday)\nVALUES (5, '42462457R', 'Deckard', 'Runner', '13/11/2019');\nGO\n\nINSERT clients\n(id, DNI, name, surname, birthday)\nVALUES (6, '43981424N', 'Michael', 'Corleone', '29/7/1960');\nGO\n\nSELECT id, DNI, name, surname, birthday\nFROM clients\nWHERE (id > 2) and (id < 4);\nGO\n\nSELECT id, DNI, name, surname, birthday\nFROM clients\nWHERE (id = 1) or (SUBSTRING(name, 1, 1) = 'B');\nGO\n\nSELECT id, DNI, name, surname, birthday\nFROM clients\nWHERE not(surname = 'Simpson');\nGO"
           }
           containerHeight={"770px"}
           insideHeight={"84%"}
         />
         <div className="examples">
-          <p style={{ textAlign: "center" }}>(id &lt; 2) and (id &gt; 4)</p>
+          <p style={{ textAlign: "center" }}>(id &gt; 2) and (id &lt; 4)</p>
           <table>
             <tr>
               <td>id</td>
@@ -278,7 +278,7 @@ function SqlFundamentalQueries02Content() {
         <CodeContainer
           title={"SQL"}
           code={
-            "SELECT id, DNI, name, surname, birthday;\nFROM clients\nWHERE id between 2 and 4;\nGO\n\nSELECT id, DNI, name, surname, birthday;\nFROM clients\nWHERE (SUBSTRING(surname, 1, 1) between 'C' and 'D');\nGO\n\nSELECT id, DNI, name, surname, birthday;\nFROM clients\nWHERE DATEPART(day, birthday) between 1 and 13;\nGO"
+            "SELECT id, DNI, name, surname, birthday\nFROM clients\nWHERE id between 2 and 4;\nGO\n\nSELECT id, DNI, name, surname, birthday\nFROM clients\nWHERE (SUBSTRING(surname, 1, 1) between 'C' and 'D');\nGO\n\nSELECT id, DNI, name, surname, birthday\nFROM clients\nWHERE DATEPART(day, birthday) between 1 and 13;\nGO"
           }
           containerHeight={"430px"}
           insideHeight={"72%"}
@@ -334,13 +334,6 @@ function SqlFundamentalQueries02Content() {
               <td>1/11/2001</td>
             </tr>
             <tr>
-              <td>5</td>
-              <td>42462457R</td>
-              <td>Deckard</td>
-              <td>Runner</td>
-              <td>13/11/2019</td>
-            </tr>
-            <tr>
               <td>6</td>
               <td>43981424N</td>
               <td>Michael</td>
@@ -392,7 +385,7 @@ function SqlFundamentalQueries02Content() {
         <CodeContainer
           title={"SQL"}
           code={
-            "SELECT id, DNI, name, surname, birthday;\nFROM clients\nWHERE id in (1, 2, 3);\nGO\n\nSELECT id, DNI, name, surname, birthday;\nFROM clients\nWHERE DATEPART(day, birthday) in (1, 21, 22));\nGO\n\nSELECT id, DNI, name, surname, birthday;\nFROM clients\nWHERE SUBSTRING(name, 1, 1) in ('D', 'J', 'M');\nGO"
+            "SELECT id, DNI, name, surname, birthday\nFROM clients\nWHERE id in (1, 2, 3);\nGO\n\nSELECT id, DNI, name, surname, birthday\nFROM clients\nWHERE DATEPART(day, birthday) in (1, 21, 22);\nGO\n\nSELECT id, DNI, name, surname, birthday\nFROM clients\nWHERE SUBSTRING(name, 1, 1) in ('D', 'J', 'M');\nGO"
           }
           containerHeight={"430px"}
           insideHeight={"72%"}
@@ -542,7 +535,7 @@ function SqlFundamentalQueries02Content() {
         <CodeContainer
           title={"SQL"}
           code={
-            "SELECT id, DNI, name, surname, birthday;\nFROM clients\nWHERE name like 'D%';\nGO\n\nSELECT id, DNI, name, surname, birthday;\nFROM clients\nWHERE DNI like '1_______N';\nGO\n\nSELECT id, DNI, name, surname, birthday;\nFROM clients\nWHERE name like '__[c]%';\nGO\n\nSELECT id, DNI, name, surname, birthday;\nFROM clients\nWHERE surname like '__[^n]%';\nGO"
+            "SELECT id, DNI, name, surname, birthday\nFROM clients\nWHERE name like 'D%';\nGO\n\nSELECT id, DNI, name, surname, birthday\nFROM clients\nWHERE DNI like '1_______N';\nGO\n\nSELECT id, DNI, name, surname, birthday\nFROM clients\nWHERE name like '__[c]%';\nGO\n\nSELECT id, DNI, name, surname, birthday\nFROM clients\nWHERE surname like '__[^n]%';\nGO"
           }
           containerHeight={"520px"}
           insideHeight={"79%"}
