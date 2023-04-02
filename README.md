@@ -58,5 +58,5 @@ Tenemos un total de 5 navbars.
 - [Navbar video](https://www.youtube.com/watch?v=ZWJa0K7KQ6c&list=WL&index=3&ab_channel=ReactwithMasoud)
 
 ## Páginas utilizadas
-- [React icons](https://react-icons.github.io/react-icons/).
-- [Coolors](https://coolors.co/).
+- [React icons](https://react-icons.github.io/react-icons/)
+- [Coolors](https://coolors.co/)
