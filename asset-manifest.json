@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/learn-how-to-code/static/css/main.8fa991a3.css",
-    "main.js": "/learn-how-to-code/static/js/main.f7f65c4f.js",
+    "main.js": "/learn-how-to-code/static/js/main.abd3da38.js",
     "static/media/Instructions.pdf": "/learn-how-to-code/static/media/Instructions.21415e11c5df85407c54.pdf",
     "static/media/MapZone.png": "/learn-how-to-code/static/media/MapZone.3b5d432da0c6f960ac70.png",
     "static/media/Margin.png": "/learn-how-to-code/static/media/Margin.ba2f8bf6c5ac497049f2.png",
     "index.html": "/learn-how-to-code/index.html",
     "main.8fa991a3.css.map": "/learn-how-to-code/static/css/main.8fa991a3.css.map",
-    "main.f7f65c4f.js.map": "/learn-how-to-code/static/js/main.f7f65c4f.js.map"
+    "main.abd3da38.js.map": "/learn-how-to-code/static/js/main.abd3da38.js.map"
   },
   "entrypoints": [
     "static/css/main.8fa991a3.css",
-    "static/js/main.f7f65c4f.js"
+    "static/js/main.abd3da38.js"
   ]
 }
