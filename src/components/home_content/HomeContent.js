@@ -4,6 +4,7 @@ import "../searcher/Searcher.css";
 import SearcherHomeContent from "./searcher_home_content/SearcherHomeContent";
 import CodeContainer from "../code_container/CodeContainer";
 import Footer from "../footer/Footer";
+import { NavLink } from "react-router-dom";
 
 function HomeContent() {
   return (
@@ -20,21 +21,21 @@ function HomeContent() {
           <h1 className="code-presentation-h1">HTML</h1>
           <h4 className="code-presentation-h4">Build web pages with...</h4>
           <br />
-          <a
+          <NavLink
+            to="../../pages/html_tutorials/HtmlHome "
             id="code-link-color"
             className="code-link"
-            href="../../pages/html_tutorials/HtmlHome"
           >
             HTML tutorials
-          </a>
+          </NavLink>
           <br />
-          <a
+          <NavLink
             id="code-link-color-2"
             className="code-link"
-            href="../../pages/html_exercises/HtmlExercises"
+            to="../../pages/html_exercises/HtmlExercises"
           >
             HTML exercises
-          </a>
+          </NavLink>
         </div>
         <div className="code-div">
           <CodeContainer
@@ -52,21 +53,21 @@ function HomeContent() {
           <h1 className="code-presentation-h1">CSS</h1>
           <h4 className="code-presentation-h4">Style web pages with...</h4>
           <br />
-          <a
+          <NavLink
             id="code-link-color"
             className="code-link"
-            href="../../pages/css_tutorials/quarter_01/CssIntroduction"
+            to="../../pages/css_tutorials/quarter_01/CssIntroduction"
           >
             CSS tutorials
-          </a>
+          </NavLink>
           <br />
-          <a
+          <NavLink
             id="code-link-color-2"
             className="code-link"
-            href="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/lenguaje_de_marcas_y_sistemas_de_gestion_de_informacion"
+            to="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/lenguaje_de_marcas_y_sistemas_de_gestion_de_informacion"
           >
             CSS exercises
-          </a>
+          </NavLink>
         </div>
         <div className="code-div">
           <CodeContainer
@@ -86,13 +87,13 @@ function HomeContent() {
             Develop web, desktop, mobile and games apps with...
           </h4>
           <br />
-          <a
+          <NavLink
             id="code-link-color"
             className="code-link"
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+            to="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
           >
             C# tutorials
-          </a>
+          </NavLink>
           <br />
           <a
             id="code-link-color-2"
@@ -118,21 +119,21 @@ function HomeContent() {
           <h1 className="code-presentation-h1">SQL</h1>
           <h4 className="code-presentation-h4">Manage databases with...</h4>
           <br />
-          <a
+          <NavLink
             id="code-link-color"
             className="code-link"
-            href="../../pages/sql_tutorials/SqlIntroduction"
+            to="../../pages/sql_tutorials/SqlIntroduction"
           >
             SQL tutorials
-          </a>
+          </NavLink>
           <br />
-          <a
+          <NavLink
             id="code-link-color-2"
             className="code-link"
-            href="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/base_de_datos"
+            to="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/base_de_datos"
           >
             SQL exercises
-          </a>
+          </NavLink>
         </div>
         <div className="code-div">
           <CodeContainer
@@ -148,4 +149,4 @@ function HomeContent() {
   );
 }
 
-export default HomeContent;   
+export default HomeContent;

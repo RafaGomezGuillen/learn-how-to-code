@@ -35,7 +35,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/learn-how-to-code" element={<Home />} />
         <Route exact path="/pages/Home" element={<Home />} />
         <Route exact path="/pages/html_tutorials/HtmlHome" element={<HtmlHome />} />
         <Route exact path="/pages/html_tutorials/HtmlIntroduction" element={<HtmlIntroduction />} />
