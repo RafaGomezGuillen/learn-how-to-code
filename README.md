@@ -1,26 +1,26 @@
 # Learn how to code. React proyect
-Este es mi primer proyecto de react basado en [W3Schools](https://www.w3schools.com/default.asp).
+This is my first react project based on [W3Schools](https://www.w3schools.com/default.asp).
 
-Estaba pensado en ser el **W3Schools** de todo el contenido que se enseña en materia de programación del primer año del *Ciclo de FP Desarrollo de Aplicaciones Web*, sin embargo, resultó solo ser contenido de **HTML, CSS y SQL** del primer trimestre.
+It was intended to be the **W3Schools** of all the content taught in programming of the first year of the *Ciclo de FP Desarrollo de Aplicaciones Web*, however, it turned out to be only **HTML, CSS and SQL** content of the first quarter.
 
-## ¿Por qué está incompleto?
-Pensaba que me llevaría menos tiempo hacer las diferentes páginas de cada lenguaje de programación, llegó a un punto en el que era monótono y quería un cambio de proyecto y sentrarme más en C#.
+## Why is it incomplete?
+I thought it would take me less time to do the different pages of each programming language, it got to a point where it was monotonous and I wanted a project change and get more into C#.
 
-Mi primer commit fue el **25 de enero del 2023**, hoy estoy escribiendo esto habiendo "terminado" este proyecto el **2 de abril de 2023**, osea, un total de 69 días. Obviamente no trabajé un total de 69 días, pero cada seción de trabajo era entre 2 hasta 6 horas seguidas de código...
+My first commit was on **January 25, 2023**, today I'm writing this having "finished" this project on **April 2, 2023**, that is, a total of 69 days. Obviously I didn't work a total of 69 days, but each work section was between 2 to 6 hours of code...
 
-Lo que más me tomaba tiempo era el code_container, pasar miles de líneas de código a un string pasado por parámetro es un trabajo laborioso solo para una sola persona.
+What took me the most time was the code_container, passing thousands of lines of code to a string passed per parameter is a laborious job only for one person.
 
-Pero bueno, había llegado a un punto en el que todo era mecánico, si hubiese seguido mi proceso de aprendizaje de react no habría sido incrementado, esa es la principal razón. Ya había aprendido todo lo que quería aprender haste este momento.
+Anyways, I had reached a point where everything was mechanical, if I had followed my process of learning react would not have been increased, that's the main reason. I had already learned everything I wanted to learn up to this point.
 
-## React y los componentes
-Estructurar un página en componentes es lo más útil que he dado por mi propia cuenta hasta ahora, si huebiese hecho este proyecto como el anterior ([Smooth Match 3](https://github.com/RafaGomezGuillen/match_3)) simplemente con HTML, CSS y Vanilla JavaScript habría tardado mucho más, y las estructuras de las diferentes páginas tendría un x40 de código.
+## React and components
+Structuring a page in components is the most useful thing I have given on my own so far, if I had done this project like the previous one ([Smooth Match 3](https://github.com/RafaGomezGuillen/match_3)) simply with HTML, CSS and Vanilla JavaScript it would have taken much longer, and the structures of the different pages would have an x40 of code.
 
-Aprendí todos los conceptos gracias a este [video](https://www.youtube.com/watch?v=rLoWMU4L_qE&list=WL&index=1&ab_channel=Fazt). Simplemente brutal la calidad de Fazt a la hora de explicar lo que es React.
+I learned all the concepts thanks to this [video](https://www.youtube.com/watch?v=rLoWMU4L_qE&list=WL&index=1&ab_channel=Fazt). Simply brutal the quality of Fazt when it comes to explaining what React is.
 
-## Componentes creados
+## Components created
 ### code_container
-Code container es donde aparace el raw del código HTML, CSS y SQL. Este tiene 4 parámetros el **Título, el código, la altura del contendor, y la altura del contedor del código**. Un ejemplo sería:
-```
+Code container is where the raw of the HTML, CSS and SQL code appears. This has 4 parameters the **Title, the code, the height of the container, and the height of the code container**. An example would be:
+```jsx
 <CodeContainer
             title={"HTML Example"}
             code={
@@ -30,20 +30,20 @@ Code container es donde aparace el raw del código HTML, CSS y SQL. Este tiene 4
             insideHeight={"65%"}
           />
 ```
-El problema es que tienes que adaptar el código a una sola línea, además de poner en el string sus tabulaciones y los saltos de línea correspondientes, vamos que no es solo copiar y pegar el código. Este trabajo fue más fácil gracias a estas páginas que pasan código a una línea:
+The problem is that you have to adapt the code to a single line, in addition to putting in the string its tabs and the corresponding line breaks, we are not just copying and pasting the code. This work was made easier by these pages that pass code to one line:
 - [HTML minifer](https://codebeautify.org/html-formatter-beautifier)
 - [CSS minifer](https://codebeautify.org/css-beautify-minify)
 - [SQL minifer](https://codebeautify.org/sql-minifier)
 ### footer
-El footer no recibe ningún parámetro, solo lo pegas y despliega un footer génerico.
+The footer does not receive any parameters, you just paste it and unfold a generic footer.
 ### searcher
-El searcher es una barra de busqueda a las diferentes páginas, este está ubicado en los navbar y en home_content. 
+The searcher is a search bar to the different pages, this is located in the navbar and in home_content.
 - [Searcher video](https://www.youtube.com/watch?v=Jd7s7egjt30&list=WL&index=2&t=544s&ab_channel=ReactwithMasoud)
 ### to_start
-to_start es un enlace que te lleva al principio de la página este está en todas la páginas excepto el index.
+to_start is a link that takes you to the top of the page this is on all pages except the index.
 ### redirection
-redirection te lleva a la página anterior y superior de la actual. Recibe 4 parámetros **link página inferior, link página superior, nombre página inferior, nombre página superior**. Aquí un ejemplo:
-```
+Redirection takes you to the previous and top page of the current one. It receives 4 parameters **link bottom page, link top page, bottom page name, top page name**. Here's an example:
+```jsx
 <Redirection
         link1={"../../../pages/sql_tutorials/SqlBasics"}
         link2={"../../../pages/sql_tutorials/SqlBasicQueries02"}
@@ -52,11 +52,11 @@ redirection te lleva a la página anterior y superior de la actual. Recibe 4 par
       />
 ```
 ### dark_mode 
-dark_mode es un botón que cambia de modo claro a oscuro y viceversa.
+dark_mode is a button that switches from light to dark mode and vice versa.
 ### navbar
-Tenemos un total de 5 navbars.
+We have a total of 5 navbars.
 - [Navbar video](https://www.youtube.com/watch?v=ZWJa0K7KQ6c&list=WL&index=3&ab_channel=ReactwithMasoud)
 
-## Páginas utilizadas
+## Pages used
 - [React icons](https://react-icons.github.io/react-icons/)
 - [Coolors](https://coolors.co/)
