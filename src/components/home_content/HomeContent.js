@@ -7,6 +7,8 @@ import Footer from "../footer/Footer";
 import { NavLink } from "react-router-dom";
 
 function HomeContent() {
+  const maxWidth = 1290; 
+
   return (
     <>
       <div className="presentation">
@@ -17,7 +19,7 @@ function HomeContent() {
         <SearcherHomeContent />
       </div>
       <div className="presentation-code" style={{ background: "#9EC3E6" }}>
-        <div className="presentation-inside">
+        <div className={ window.innerWidth < maxWidth ? "" : "presentation-inside" }>
           <h1 className="code-presentation-h1">HTML</h1>
           <h4 className="code-presentation-h4">Build web pages with...</h4>
           <br />
@@ -49,7 +51,7 @@ function HomeContent() {
         </div>
       </div>
       <div className="presentation-code" style={{ background: "#94958B" }}>
-        <div className="presentation-inside">
+        <div className={ window.innerWidth < maxWidth ? "" : "presentation-inside" }>
           <h1 className="code-presentation-h1">CSS</h1>
           <h4 className="code-presentation-h4">Style web pages with...</h4>
           <br />
@@ -81,7 +83,7 @@ function HomeContent() {
         </div>
       </div>
       <div className="presentation-code" style={{ background: "#A21F16" }}>
-        <div className="presentation-inside">
+        <div className={ window.innerWidth < maxWidth ? "" : "presentation-inside" }>
           <h1 className="code-presentation-h1">C#</h1>
           <h4 className="code-presentation-h4">
             Develop web, desktop, mobile and games apps with...
@@ -115,7 +117,7 @@ function HomeContent() {
         </div>
       </div>
       <div className="presentation-code" style={{ background: "#CD9FCC" }}>
-        <div className="presentation-inside">
+        <div className={ window.innerWidth < maxWidth ? "" : "presentation-inside" }>
           <h1 className="code-presentation-h1">SQL</h1>
           <h4 className="code-presentation-h4">Manage databases with...</h4>
           <br />

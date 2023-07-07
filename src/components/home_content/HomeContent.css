@@ -83,13 +83,21 @@
 }
 
 @media only screen and (max-width: 1290px) {
-  .code-div {
-    visibility: hidden;
+  .presentation-h1 {
+    font-size: 35px;
   }
 
-  .presentation,
-  .presentation-code {
-    width: 100%;
+  .code-presentation-h1 {
+    font-size: 80px;
+  }
+
+  .code-div {
+    display: hidden;
+  }
+
+  .code-div * {
+    display: hidden;
+    visibility: hidden;
   }
 
   .presentation-inside {
@@ -98,6 +106,13 @@
   }
 
   .presentation-code + .footer {
-    width: 100%;
+    width: fit-content;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .presentation-code + .footer {
+    height: max-content;
   }
 }

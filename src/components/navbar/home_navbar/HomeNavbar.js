@@ -133,7 +133,7 @@ function HomeNavbar() {
           <NavItem eventKey="sql/Tutorial">
             <NavText>
               <NavLink
-                to="../../../pages/sql_tutorials/SqlIntroduction"
+                to="/pages/sql_tutorials/SqlIntroduction"
                 style={linkText}
               >
                 SQL Tutorial

@@ -65,38 +65,38 @@ function SearcherHomeContent() {
 
   return (
     <div className="searcher-2">
-          <div className="search-container-home">
-            <div className="search-inner">
-              <SearchTerm value={value} onChange={onChange} />
-              <Link to={docName}>
-                <SearchButton onSearch={onSearch} />
-              </Link>
-            </div>
-            <div className="dropdown">
-              {require("../../searcher/Searcher.json")
-                .filter((item) => {
-                  const searchTerm = value.toLowerCase();
-                  const fullName = item.document_name.toLowerCase();
-
-                  return (
-                    searchTerm &&
-                    fullName.startsWith(searchTerm) &&
-                    fullName !== searchTerm
-                  );
-                })
-                .slice(0, 10)
-                .map((item) => (
-                  <div
-                    onClick={() => setValue(item.document_name)}
-                    className="dropdown-row"
-                    key={item.document_name}
-                  >
-                    {item.document_name}
-                  </div>
-                ))}
-            </div>
-          </div>
+      <div className="search-container-home">
+        <div className="search-inner">
+          <SearchTerm value={value} onChange={onChange} />
+          <Link to={docName}>
+            <SearchButton onSearch={onSearch} />
+          </Link>
         </div>
+        <div className="dropdown">
+          {require("../../searcher/Searcher.json")
+            .filter((item) => {
+              const searchTerm = value.toLowerCase();
+              const fullName = item.document_name.toLowerCase();
+
+              return (
+                searchTerm &&
+                fullName.startsWith(searchTerm) &&
+                fullName !== searchTerm
+              );
+            })
+            .slice(0, 10)
+            .map((item) => (
+              <div
+                onClick={() => setValue(item.document_name)}
+                className="dropdown-row"
+                key={item.document_name}
+              >
+                {item.document_name}
+              </div>
+            ))}
+        </div>
+      </div>
+    </div>
   );
 }
 
