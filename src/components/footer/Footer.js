@@ -27,7 +27,7 @@ function Footer() {
       <a href="https://twitter.com/gom3zra72">
         <AiOutlineTwitter className="icon-links" />
       </a>
-      <a href="https://www.linkedin.com/in/rafael-g%C3%B3mez-16676a282/">
+      <a href="www.linkedin.com/in/rafael-gómez-guillén">
         <AiOutlineLinkedin className="icon-links" />
       </a>
       <a href="https://www.paypal.com/paypalme/rafagomezguillen?country.x=ES&locale.x=es_ES">
