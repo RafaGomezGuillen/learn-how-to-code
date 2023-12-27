@@ -66,7 +66,7 @@ function HomeContent() {
           <NavLink
             id="code-link-color-2"
             className="code-link"
-            to="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/lenguaje_de_marcas_y_sistemas_de_gestion_de_informacion"
+            to="https://github.com/RafaGomezGuillen/desarrollo-de-aplicaciones-web/"
           >
             CSS exercises
           </NavLink>
@@ -92,7 +92,7 @@ function HomeContent() {
           <NavLink
             id="code-link-color"
             className="code-link"
-            to="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+            to="https://github.com/RafaGomezGuillen/desarrollo-de-aplicaciones-web/"
           >
             C# tutorials
           </NavLink>
@@ -100,7 +100,7 @@ function HomeContent() {
           <a
             id="code-link-color-2"
             className="code-link"
-            href="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/programacion"
+            href="https://github.com/RafaGomezGuillen/desarrollo-de-aplicaciones-web/"
           >
             C# exercises
           </a>
@@ -132,7 +132,7 @@ function HomeContent() {
           <NavLink
             id="code-link-color-2"
             className="code-link"
-            to="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/base_de_datos"
+            to="https://github.com/RafaGomezGuillen/desarrollo-de-aplicaciones-web/"
           >
             SQL exercises
           </NavLink>

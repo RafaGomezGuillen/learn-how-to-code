@@ -3,7 +3,6 @@ import "./Footer.css";
 import {
   AiFillGithub,
   AiOutlineInstagram,
-  AiOutlineTwitter,
   AiOutlineLinkedin,
 } from "react-icons/ai";
 import { BsPaypal } from "react-icons/bs";
@@ -23,9 +22,6 @@ function Footer() {
       </a>
       <a href="https://www.instagram.com/rafagomez.jpg/">
         <AiOutlineInstagram className="icon-links" />
-      </a>
-      <a href="https://twitter.com/gom3zra72">
-        <AiOutlineTwitter className="icon-links" />
       </a>
       <a href="https://www.linkedin.com/in/rafael-g%C3%B3mez-guill%C3%A9n/?locale=en_US">
         <AiOutlineLinkedin className="icon-links" />

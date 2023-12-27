@@ -91,7 +91,7 @@ function HomeNavbar() {
           <NavItem eventKey="css/Exercises">
             <NavText>
               <a
-                href="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/lenguaje_de_marcas_y_sistemas_de_gestion_de_informacion"
+                href="https://github.com/RafaGomezGuillen/desarrollo-de-aplicaciones-web/"
                 style={linkText}
               >
                 CSS Exercises
@@ -107,7 +107,7 @@ function HomeNavbar() {
           <NavItem eventKey="c#/Tutorial">
             <NavText>
               <a
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                href="https://github.com/RafaGomezGuillen/desarrollo-de-aplicaciones-web/"
                 style={linkText}
               >
                 C# Tutorial
@@ -117,7 +117,7 @@ function HomeNavbar() {
           <NavItem eventKey="c#/Exercises">
             <NavText>
               <a
-                href="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/programacion"
+                href="https://github.com/RafaGomezGuillen/desarrollo-de-aplicaciones-web/"
                 style={linkText}
               >
                 C# Exercises
@@ -143,7 +143,7 @@ function HomeNavbar() {
           <NavItem eventKey="sql/Exercises">
             <NavText>
               <a
-                href="https://github.com/RafaGomezGuillen/desarrollo_de_aplicaciones_web/tree/main/base_de_datos"
+                href="https://github.com/RafaGomezGuillen/desarrollo-de-aplicaciones-web/"
                 style={linkText}
               >
                 SQL Exercises
