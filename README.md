@@ -3,14 +3,11 @@ This is my first react project based on [W3Schools](https://www.w3schools.com/de
 
 It was intended to be the **W3Schools** of all the content taught in programming of the first year of the *Ciclo de FP Desarrollo de Aplicaciones Web*, however, it turned out to be only **HTML, CSS and SQL** content of the first quarter.
 
-## Why is it incomplete?
-I thought it would take me less time to do the different pages of each programming language, it got to a point where it was monotonous and I wanted a project change and get more into C#.
+🔗 View it live: [Learn How to Code Website](https://rafagomezguillen.github.io/learn-how-to-code/)
 
-My first commit was on **January 25, 2023**, today I'm writing this having "finished" this project on **April 2, 2023**, that is, a total of 69 days. Obviously I didn't work a total of 69 days, but each work section was between 2 to 6 hours of code...
+## 🎥 Watch the YouTube video to see the Learn how to code in action!
 
-What took me the most time was the code_container, passing thousands of lines of code to a string passed per parameter is a laborious job only for one person.
-
-Anyways, I had reached a point where everything was mechanical, if I had followed my process of learning react would not have been increased, that's the main reason. I had already learned everything I wanted to learn up to this point.
+[![Watch the video](https://img.youtube.com/vi/KdUgOvMEbZs/0.jpg)](https://www.youtube.com/watch?v=KdUgOvMEbZs)
 
 ## React and components
 Structuring a page in components is the most useful thing I have given on my own so far, if I had done this project like the previous one ([Smooth Match 3](https://github.com/RafaGomezGuillen/match_3)) simply with HTML, CSS and Vanilla JavaScript it would have taken much longer, and the structures of the different pages would have an x40 of code.
